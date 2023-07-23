@@ -4,17 +4,15 @@ import React, { useState } from 'react';
 function NavigationBar({ handleNavigationClick }) {
     const [isSpringShown, setSpringIsShown] = useState(false);
     const [isSpringSecSubTopShown, setIsSpringSecSubTopShown] = useState(false);
-    const [isRegexSecSubTopShown, setIsRegexSecSubTopShown] = useState(false);
-    const [isBatchSecSubTopShown, setIsBatchSecSubTopShown] = useState(false);
     const [isDevopsTopShown, setIsDevopsTopShown] = useState(false);
     return (
       <div className="App">
         <header className="App-header">
           <div className="App-link">
             <div className='menu-header'>
-            <div className='topics'
-              onMouseEnter={() => setIsSpringSecSubTopShown(true)}
-              onMouseLeave={() => setIsSpringSecSubTopShown(false)}>
+              <div className='topics'
+                onMouseEnter={() => setIsSpringSecSubTopShown(true)}
+                onMouseLeave={() => setIsSpringSecSubTopShown(false)}>
                 <div className='topic-name'>SPRING SECURITY</div>
                 {isSpringSecSubTopShown && (<div className='subtopics'>
                   <div className='subtopic-name' onClick={() => handleNavigationClick('SpringSecBasics')}>
@@ -39,47 +37,37 @@ function NavigationBar({ handleNavigationClick }) {
                 )}
               </div>  
               <div className='topics' 
-              onMouseEnter={() => setSpringIsShown(true)}
-              onMouseLeave={() => setSpringIsShown(false)}>
+                onMouseEnter={() => setSpringIsShown(true)}
+                onMouseLeave={() => setSpringIsShown(false)}>
                 <div className='topic-name'>SPRING</div>
                 {isSpringShown && (<div className='subtopics'>
-                  <div className='subtopic-name'
-                  onMouseEnter={() => setIsRegexSecSubTopShown(true)}
-                  onMouseLeave={() => setIsRegexSecSubTopShown(false)}>
-                    <div className='subtopic-name-heading'>REGEX</div>
-                    {isRegexSecSubTopShown && (<div className='subtopics2'>
-                      <div className='subtopic2-name' onClick={() => handleNavigationClick('RegexCheetSheet')}>CHEETSHEET</div>
-                    </div>
-                    )}
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('RegexCheetsheet')}>
+                    <div className='subtopic-name-heading'>REGEX CHEETSHEET</div>
                   </div>
-                  <div className='subtopic-name'
-                  onMouseEnter={() => setIsBatchSecSubTopShown(true)}
-                  onMouseLeave={() => setIsBatchSecSubTopShown(false)}>
-                    <div className='subtopic-name-heading'>SPRING BATCH</div>
-                    {isBatchSecSubTopShown && (<div className='subtopics2'>
-                      <div className='subtopic2-name' onClick={() => handleNavigationClick('TaskletJob')}>TASKLET</div>
-                      <div className='subtopic2-name' onClick={() => handleNavigationClick('BatchJob')}>BATCH JOB</div>
-                    </div>
-                    )}
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('SpringBatchTasklet')}>
+                    <div className='subtopic-name-heading'>SPRING BATCH TASKLET</div>
                   </div>
-                  <div className='subtopic-name'>
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('SpringBatchJob')}>
+                    <div className='subtopic-name-heading'>SPRING BATCH JOB</div>
+                  </div>
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('SpringLogging')}>
                     <div className='subtopic-name-heading'>SPRING LOGGING</div>
                   </div>
-                  <div className='subtopic-name'>
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('SpringSwagger')}>
                     <div className='subtopic-name-heading'>SWAGGER</div>
                   </div>
-                  <div className='subtopic-name'>
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('SpringGateway')}>
                     <div className='subtopic-name-heading'>SPRING GATEWAY</div>
                   </div>
-                  <div className='subtopic-name'>
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('SpringMailServer')}>
                     <div className='subtopic-name-heading'>MAIL SERVER</div>
                   </div>
                 </div>
                 )}
               </div>
               <div className='topics'
-              onMouseEnter={() => setIsDevopsTopShown(true)}
-              onMouseLeave={() => setIsDevopsTopShown(false)}>
+                onMouseEnter={() => setIsDevopsTopShown(true)}
+                onMouseLeave={() => setIsDevopsTopShown(false)}>
                 <div className='topic-name'>DEVOPS</div>
                 {isDevopsTopShown && (<div className='subtopics'>
                   <div className='subtopic-name' onClick={() => handleNavigationClick('ServiceDiscovery')}>
