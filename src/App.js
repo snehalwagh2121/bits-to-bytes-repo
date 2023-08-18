@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='outlinePage'>
       <NavigationBar handleNavigationClick={handleNavigationClick} />
 
       {/* Render the text based on the selected navigation item */}

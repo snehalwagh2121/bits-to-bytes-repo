@@ -1,4 +1,37 @@
-.basic-heading{
-    color: aqua;
+.main-page{
+    padding: 2%;
+}
+.page-content{
+    margin: 2%;
+}
+.page-heading{
+    font-size: 3rem;
     top: 40vh;
+}
+.heading-2{
+    font-size: 2rem;
+}
+.heading-3{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.section-content{
+    margin: 2%;
+}
+.italics{
+    font-style: italic;
+}
+.sec-image{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 5px;
+    max-width: 80%;
+}
+.bold{
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+    color: blue;
 }
