@@ -1,23 +1,23 @@
 import React from 'react';
 import './basics.css';
-import dependencyImage from './images/dependency.PNG';
-import springPassword from './images/spring-generated-password.PNG';
-import loginPage from './images/login-page.PNG';
-import successfulLogin from './images/successful-login.PNG';
-import springSecArch from './images/spring-sec-arch.PNG';
-import springUserDetails from './images/userdetails.PNG';
-import springCustomUserDetails from './images/customuserdetails.PNG';
-import springUserBuilder from './images/userbuildermethod.PNG';
-import springUserDetailsService from './images/userdetialsservice.PNG';
-import springCustomUserDetailsService from './images/customuserdetailsservice.PNG';
-import noOpPasswordEncoderError from './images/noOpPasswordEncoderError.PNG';
-import beanDefinitions from './images/beanDefinitions.PNG';
-import dummyLogin from './images/dummyLogin.PNG';
-import passwordEncoderInterface from './images/passwordEncoderInterface.PNG';
-import customPasswordEncoderwoEncryption from './images/customPasswordEncoderwoEncryption.PNG';
-import customPasswordEncoderwEncryption from './images/customPasswordEncoderwEncryption.PNG';
-import authenticationInterface from './images/authenticationInterface.PNG';
-import authenticationProviderInterface from './images/authenticationProviderInterface.PNG';
+import dependencyImage from './images/basics/dependency.PNG';
+import springPassword from './images/basics/spring-generated-password.PNG';
+import loginPage from './images/basics/login-page.PNG';
+import successfulLogin from './images/basics/successful-login.PNG';
+import springSecArch from './images/basics/spring-sec-arch.PNG';
+import springUserDetails from './images/basics/userdetails.PNG';
+import springCustomUserDetails from './images/basics/customuserdetails.PNG';
+import springUserBuilder from './images/basics/userbuildermethod.PNG';
+import springUserDetailsService from './images/basics/userdetialsservice.PNG';
+import springCustomUserDetailsService from './images/basics/customuserdetailsservice.PNG';
+import noOpPasswordEncoderError from './images/basics/noOpPasswordEncoderError.PNG';
+import beanDefinitions from './images/basics/beanDefinitions.PNG';
+import dummyLogin from './images/basics/dummyLogin.PNG';
+import passwordEncoderInterface from './images/basics/passwordEncoderInterface.PNG';
+import customPasswordEncoderwoEncryption from './images/basics/customPasswordEncoderwoEncryption.PNG';
+import customPasswordEncoderwEncryption from './images/basics/customPasswordEncoderwEncryption.PNG';
+import authenticationInterface from './images/basics/authenticationInterface.PNG';
+import authenticationProviderInterface from './images/basics/authenticationProviderInterface.PNG';
 
 
 function springbasics() {
