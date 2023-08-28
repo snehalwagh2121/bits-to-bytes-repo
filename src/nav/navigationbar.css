@@ -21,7 +21,7 @@
   }
   .App-link {
     color: #61dafb;
-    width: 100%;
+    width: 100vw;
   }
   .menu-header {
     width: 100vw;
@@ -32,13 +32,12 @@
     background-color: #282c34;
   }
   .topics {
-    width: 22%;
-    margin: 15px;
+    width: 20%;
+    margin-left: 5%;
     text-align: start;
   }
   .topic-name{
-    padding: 2%;
-    margin-left: 20px;
+    padding: 5%;
   }
   .subtopics{
     position: absolute;
