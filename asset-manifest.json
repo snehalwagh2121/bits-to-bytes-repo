@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bits-to-bytes-repo/static/css/main.5ca72db2.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.74951e19.js",
+    "main.js": "/bits-to-bytes-repo/static/js/main.df6db4c9.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/otpReceivedOnMobile.jpeg": "/bits-to-bytes-repo/static/media/otpReceivedOnMobile.27b0bb2669453139d4ea.jpeg",
     "static/media/noOpPasswordEncoderError.PNG": "/bits-to-bytes-repo/static/media/noOpPasswordEncoderError.080dcd039660df5513c3.PNG",
@@ -23,6 +23,7 @@
     "static/media/CustomUserDetails.PNG": "/bits-to-bytes-repo/static/media/CustomUserDetails.91d1543222b04cf191a9.PNG",
     "static/media/buynumberfromlist.PNG": "/bits-to-bytes-repo/static/media/buynumberfromlist.2d3c3c7062615149aec3.PNG",
     "static/media/filterModified.PNG": "/bits-to-bytes-repo/static/media/filterModified.443c25aa48d711898cb0.PNG",
+    "static/media/detailed-controller.PNG": "/bits-to-bytes-repo/static/media/detailed-controller.db7b41c251e3705e36a0.PNG",
     "static/media/customuserdetails.PNG": "/bits-to-bytes-repo/static/media/customuserdetails.e54203c3cf658eac03a3.PNG",
     "static/media/projectConfigModified.PNG": "/bits-to-bytes-repo/static/media/projectConfigModified.1a3048183f093c247339.PNG",
     "static/media/otpAuthentication.PNG": "/bits-to-bytes-repo/static/media/otpAuthentication.fe046aeb87dddf576c90.PNG",
@@ -60,6 +61,7 @@
     "static/media/properties.PNG": "/bits-to-bytes-repo/static/media/properties.c224e4326536cb601b03.PNG",
     "static/media/userdataClass.PNG": "/bits-to-bytes-repo/static/media/userdataClass.e6121e9df657f6676d07.PNG",
     "static/media/userDetailsMapper.PNG": "/bits-to-bytes-repo/static/media/userDetailsMapper.0eec44eb768a9cbf606f.PNG",
+    "static/media/swagger-uipage.PNG": "/bits-to-bytes-repo/static/media/swagger-uipage.316812e293e7aa553485.PNG",
     "static/media/EmployeePojo.PNG": "/bits-to-bytes-repo/static/media/EmployeePojo.5af41658c49b5520a09d.PNG",
     "static/media/userdetailsmapper.PNG": "/bits-to-bytes-repo/static/media/userdetailsmapper.5e40e3b61b3092764e4f.PNG",
     "static/media/controller.PNG": "/bits-to-bytes-repo/static/media/controller.65edffbfe40a7188bf59.PNG",
@@ -71,13 +73,16 @@
     "static/media/customPasswordEncoderwoEncryption.PNG": "/bits-to-bytes-repo/static/media/customPasswordEncoderwoEncryption.618829e728f176f85f2f.PNG",
     "static/media/otpInResponse.PNG": "/bits-to-bytes-repo/static/media/otpInResponse.71f894e1195874a53385.PNG",
     "static/media/successfulLoginToken.PNG": "/bits-to-bytes-repo/static/media/successfulLoginToken.696647fbb8d245cb5160.PNG",
+    "static/media/pojo.PNG": "/bits-to-bytes-repo/static/media/pojo.7f304524b05baecbd20d.PNG",
     "static/media/h2Db.PNG": "/bits-to-bytes-repo/static/media/h2Db.527b1d0b830bd3c08f5f.PNG",
     "static/media/passwordEncoderInterface.PNG": "/bits-to-bytes-repo/static/media/passwordEncoderInterface.6364f279a0c73efc8b13.PNG",
     "static/media/usernamepasswordTest.PNG": "/bits-to-bytes-repo/static/media/usernamepasswordTest.2fca4aca83d08dcf88ac.PNG",
     "static/media/otpPojo.PNG": "/bits-to-bytes-repo/static/media/otpPojo.e9957531274a6e60e5dd.PNG",
     "static/media/validOtp.PNG": "/bits-to-bytes-repo/static/media/validOtp.9d6b4bad767800f364bb.PNG",
+    "static/media/try-one.PNG": "/bits-to-bytes-repo/static/media/try-one.f51de082705a2a758bf7.PNG",
     "static/media/projectStructureUpdated.PNG": "/bits-to-bytes-repo/static/media/projectStructureUpdated.589f4082e5a9f26f3d0a.PNG",
     "static/media/otpviamobile.PNG": "/bits-to-bytes-repo/static/media/otpviamobile.2241c0be913c6974572d.PNG",
+    "static/media/param-swagger.PNG": "/bits-to-bytes-repo/static/media/param-swagger.1f7044c1c61f295d534b.PNG",
     "static/media/customLogFilterRegistered.PNG": "/bits-to-bytes-repo/static/media/customLogFilterRegistered.1d3381b827351df31fa3.PNG",
     "static/media/EmployeeCopyRepository.PNG": "/bits-to-bytes-repo/static/media/EmployeeCopyRepository.b85da28bb4ff5e0a09a4.PNG",
     "static/media/employeeRepository.PNG": "/bits-to-bytes-repo/static/media/employeeRepository.4d472d6d6b24dafb42ce.PNG",
@@ -92,6 +97,7 @@
     "static/media/userbuildermethod.PNG": "/bits-to-bytes-repo/static/media/userbuildermethod.141f845a0d30148bd40f.PNG",
     "static/media/constants.PNG": "/bits-to-bytes-repo/static/media/constants.09dd7b66b4b6c4f6b949.PNG",
     "static/media/projectstructure.PNG": "/bits-to-bytes-repo/static/media/projectstructure.76836fb8bd16138b5944.PNG",
+    "static/media/controller-operation-response.PNG": "/bits-to-bytes-repo/static/media/controller-operation-response.7b03763e7521f501de9b.PNG",
     "static/media/mostlyUsedPattern.PNG": "/bits-to-bytes-repo/static/media/mostlyUsedPattern.bf889ddfe9f8d06654b1.PNG",
     "static/media/redirectionToOurApp.PNG": "/bits-to-bytes-repo/static/media/redirectionToOurApp.651ad89f6fcb1bf3c561.PNG",
     "static/media/excelDependency.PNG": "/bits-to-bytes-repo/static/media/excelDependency.b49e6a7f8d653cbb674d.PNG",
@@ -102,6 +108,7 @@
     "static/media/login.PNG": "/bits-to-bytes-repo/static/media/login.425570d429e089bb7737.PNG",
     "static/media/execelFileWithContent.PNG": "/bits-to-bytes-repo/static/media/execelFileWithContent.ec19d9b49530d12019c4.PNG",
     "static/media/spring-generated-password.PNG": "/bits-to-bytes-repo/static/media/spring-generated-password.c241cbba438130890d69.PNG",
+    "static/media/swagger-dependency.PNG": "/bits-to-bytes-repo/static/media/swagger-dependency.937e7c35718e9ddf378e.PNG",
     "static/media/jaxbDependency.PNG": "/bits-to-bytes-repo/static/media/jaxbDependency.24c4bb54528c8c062358.PNG",
     "static/media/jpaDependency.PNG": "/bits-to-bytes-repo/static/media/jpaDependency.037fdf34d581b1bdf51a.PNG",
     "static/media/incorrectcredentials.PNG": "/bits-to-bytes-repo/static/media/incorrectcredentials.27dca5b5fb4d2299a6bb.PNG",
@@ -115,11 +122,11 @@
     "static/media/successful-login.PNG": "/bits-to-bytes-repo/static/media/successful-login.df7144dd9594a52e440b.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
     "main.5ca72db2.css.map": "/bits-to-bytes-repo/static/css/main.5ca72db2.css.map",
-    "main.74951e19.js.map": "/bits-to-bytes-repo/static/js/main.74951e19.js.map",
+    "main.df6db4c9.js.map": "/bits-to-bytes-repo/static/js/main.df6db4c9.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ca72db2.css",
-    "static/js/main.74951e19.js"
+    "static/js/main.df6db4c9.js"
   ]
 }
