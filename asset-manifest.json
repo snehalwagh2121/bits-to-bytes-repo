@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/bits-to-bytes-repo/static/css/main.bd1dcc5f.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.c9b90158.js",
+    "main.css": "/bits-to-bytes-repo/static/css/main.5ca72db2.css",
+    "main.js": "/bits-to-bytes-repo/static/js/main.74951e19.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/otpReceivedOnMobile.jpeg": "/bits-to-bytes-repo/static/media/otpReceivedOnMobile.27b0bb2669453139d4ea.jpeg",
     "static/media/noOpPasswordEncoderError.PNG": "/bits-to-bytes-repo/static/media/noOpPasswordEncoderError.080dcd039660df5513c3.PNG",
     "static/media/executingLogs.PNG": "/bits-to-bytes-repo/static/media/executingLogs.13c780b2207c9e8abd11.PNG",
     "static/media/logsShowingChunkProcessing.PNG": "/bits-to-bytes-repo/static/media/logsShowingChunkProcessing.4304ae2246a981cc3817.PNG",
     "static/media/logs.PNG": "/bits-to-bytes-repo/static/media/logs.4a32fb2e4a9593ed8a93.PNG",
+    "static/media/sampleLogFile.PNG": "/bits-to-bytes-repo/static/media/sampleLogFile.c7634e73367a0adec480.PNG",
     "static/media/otpAuthenticationProvider.PNG": "/bits-to-bytes-repo/static/media/otpAuthenticationProvider.108eca365709e1908af6.PNG",
     "static/media/LogForJobNotExecuting.PNG": "/bits-to-bytes-repo/static/media/LogForJobNotExecuting.67eb27ed6604fefaa780.PNG",
     "static/media/batchConfig.PNG": "/bits-to-bytes-repo/static/media/batchConfig.e4614964f017e70ff4d5.PNG",
@@ -91,9 +92,11 @@
     "static/media/userbuildermethod.PNG": "/bits-to-bytes-repo/static/media/userbuildermethod.141f845a0d30148bd40f.PNG",
     "static/media/constants.PNG": "/bits-to-bytes-repo/static/media/constants.09dd7b66b4b6c4f6b949.PNG",
     "static/media/projectstructure.PNG": "/bits-to-bytes-repo/static/media/projectstructure.76836fb8bd16138b5944.PNG",
+    "static/media/mostlyUsedPattern.PNG": "/bits-to-bytes-repo/static/media/mostlyUsedPattern.bf889ddfe9f8d06654b1.PNG",
     "static/media/redirectionToOurApp.PNG": "/bits-to-bytes-repo/static/media/redirectionToOurApp.651ad89f6fcb1bf3c561.PNG",
     "static/media/excelDependency.PNG": "/bits-to-bytes-repo/static/media/excelDependency.b49e6a7f8d653cbb674d.PNG",
     "static/media/h2connection.PNG": "/bits-to-bytes-repo/static/media/h2connection.e21c64fb62972814fe54.PNG",
+    "static/media/mdcLog.PNG": "/bits-to-bytes-repo/static/media/mdcLog.96a2ffe580ec1d2023cd.PNG",
     "static/media/userdetialsservice.PNG": "/bits-to-bytes-repo/static/media/userdetialsservice.f1595bca0b1e58a7618a.PNG",
     "static/media/otpRepository.PNG": "/bits-to-bytes-repo/static/media/otpRepository.05fef17cf2bff25f86f3.PNG",
     "static/media/login.PNG": "/bits-to-bytes-repo/static/media/login.425570d429e089bb7737.PNG",
@@ -111,12 +114,12 @@
     "static/media/correctcredentials.PNG": "/bits-to-bytes-repo/static/media/correctcredentials.565edae7ca86ddab6e95.PNG",
     "static/media/successful-login.PNG": "/bits-to-bytes-repo/static/media/successful-login.df7144dd9594a52e440b.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
-    "main.bd1dcc5f.css.map": "/bits-to-bytes-repo/static/css/main.bd1dcc5f.css.map",
-    "main.c9b90158.js.map": "/bits-to-bytes-repo/static/js/main.c9b90158.js.map",
+    "main.5ca72db2.css.map": "/bits-to-bytes-repo/static/css/main.5ca72db2.css.map",
+    "main.74951e19.js.map": "/bits-to-bytes-repo/static/js/main.74951e19.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd1dcc5f.css",
-    "static/js/main.c9b90158.js"
+    "static/css/main.5ca72db2.css",
+    "static/js/main.74951e19.js"
   ]
 }
