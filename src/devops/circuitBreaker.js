@@ -53,6 +53,10 @@ function CircuitBreaker() {
                     <p><span>This time our default method got called and we got the default response.</span></p>
                 </div>
             </div>
+            <div className='heading-2'>REFERENCE</div>
+            <div className='section-content'>
+                <p><span> <a href= 'https://dev.to/sabyasachi/resilience4j-the-path-beyond-hystrix-3a2c'>More details</a></span></p>
+            </div>
         </div>
     </div>
         );
