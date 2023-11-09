@@ -17,6 +17,17 @@ import startConsumer from './images/kafka/start-consumer.PNG';
 import messageProducedAndConsumed from './images/kafka/message-produced-and-consumed.PNG';
 import messagesInOffset from './images/kafka/messagesInOffset.PNG';
 import refreshToSeeMsgs from './images/kafka/refreshToSeeMsgsOffset.PNG';
+import dependency from './images/kafka/dependency.PNG';
+import producerProperties from './images/kafka/producerProperties.PNG';
+import enableKafkaAnnotation from './images/kafka/enableKafkaAnnotation.PNG';
+import kafkaConsumerClass from './images/kafka/kafkaConsumerClass.PNG';
+import kafkaMsgSentLogs from './images/kafka/kafkaMsgSentLogs.PNG';
+import kafkaProducerClass from './images/kafka/kafkaProducerClass.PNG';
+import messageConsumedLogs from './images/kafka/messageConsumedLogs.PNG';
+import messageSentToProducerConsumer from './images/kafka/messageSentToProducerConsumer.PNG';
+import msgSentToConsumer from './images/kafka/msgSentToConsumer.PNG';
+import restApiSuccessResponse from './images/kafka/restApiSuccessResponse.PNG';
+import restApiToSendMsg from './images/kafka/restApiToSendMsg.PNG';
 
 function Kafka() {
     return (
@@ -27,7 +38,7 @@ function Kafka() {
             <div className='heading-2'>Download and install kafka</div>
             <div className='section-content'>
                 <div className='heading 4'>
-                    <p><span>Downlaof latest version of kafka from <a href='https://kafka.apache.org/downloads'>kafka.apache.org</a></span></p>
+                    <p><span>Downlaod latest version of kafka from <a href='https://kafka.apache.org/downloads'>kafka.apache.org</a></span></p>
                     <p><span ><img className='sec-image' src={kafkaDownload} alt='kafkaDownload'  /></span></p>
                     <p><span>Unzip the downloaded file you'll find the follwoing folders inside:</span></p>
                     <p><span ><img className='sec-image' src={kafkaFolders} alt='kafkaFolders'  /></span></p>
@@ -77,7 +88,34 @@ function Kafka() {
                     <p><span ><img className='sec-image' src={refreshToSeeMsgs} alt='refreshToSeeMsgs'  /></span></p>
                 </div>
             </div>
-        
+            <div className='heading-2'>Kakfa Spring Integration</div>
+            <div className='section-content'>
+                <div className='heading 4'>
+                    <p><span>Create a new project with following dependencies: </span></p>
+                    <p><span ><img className='sec-image' src={dependency} alt='dependency'  /></span></p>
+                    <p><span>Enable Kafka Annotation </span></p>
+                    <p><span ><img className='sec-image' src={enableKafkaAnnotation} alt='enableKafkaAnnotation'  /></span></p>
+                    <p><span>Define Kafka Producer properties: </span></p>
+                    <p><span ><img className='sec-image' src={producerProperties} alt='producerProperties'  /></span></p>
+                    <p><span>Producer send Config: </span></p>
+                    <p><span ><img className='sec-image' src={kafkaProducerClass} alt='kafkaProducerClass'  /></span></p>
+                    <p><span>Rest API to send message:  </span></p>
+                    <p><span ><img className='sec-image' src={restApiToSendMsg} alt='restApiToSendMsg'  /></span></p>
+                    <p><span>Test the producer:  </span></p>
+                    <p><span>Start API and send a message by calling the API we have exposed: </span></p>
+                    <p><span ><img className='sec-image' src={restApiSuccessResponse} alt='restApiSuccessResponse'  /></span></p>
+                    <p><span> We can see message sent message in logs: </span></p>
+                    <p><span ><img className='sec-image' src={kafkaMsgSentLogs} alt='kafkaMsgSentLogs'  /></span></p>
+                    <p><span> Lets see in our consumer from cmd: </span></p>
+                    <p><span ><img className='sec-image' src={msgSentToConsumer} alt='msgSentToConsumer'  /></span></p>
+                    <p><span> Now lets Configure Consumer in our application: </span></p>
+                    <p><span ><img className='sec-image' src={kafkaConsumerClass} alt='kafkaConsumerClass'  /></span></p>
+                    <p><span> Lets send another message by calling our exposed endpoint and see if our consumer has received in logs. </span></p>
+                    <p><span ><img className='sec-image' src={messageSentToProducerConsumer} alt='messageSentToProducerConsumer'  /></span></p>
+                    <p><span> Logs:</span></p>
+                    <p><span ><img className='sec-image' src={messageConsumedLogs} alt='messageConsumedLogs'  /></span></p>
+                </div>
+            </div>
         </div>
     </div>
         );
