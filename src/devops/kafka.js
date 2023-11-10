@@ -28,6 +28,12 @@ import messageSentToProducerConsumer from './images/kafka/messageSentToProducerC
 import msgSentToConsumer from './images/kafka/msgSentToConsumer.PNG';
 import restApiSuccessResponse from './images/kafka/restApiSuccessResponse.PNG';
 import restApiToSendMsg from './images/kafka/restApiToSendMsg.PNG';
+import ProducerTemplateObject from './images/kafka/ProducerTemplateObject.PNG';
+import KafkaObjectConsumer from './images/kafka/KafkaObjectConsumer.PNG';
+import sendObjectToKafkaRest from './images/kafka/sendObjectToKafkaRest.PNG';
+import sendObjectApiCalled from './images/kafka/sendObjectApiCalled.PNG';
+import orderConsumedLogs from './images/kafka/orderConsumedLogs.PNG';
+import orderInOffserUI from './images/kafka/orderInOffsetUI.PNG';
 
 function Kafka() {
     return (
@@ -114,6 +120,23 @@ function Kafka() {
                     <p><span ><img className='sec-image' src={messageSentToProducerConsumer} alt='messageSentToProducerConsumer'  /></span></p>
                     <p><span> Logs:</span></p>
                     <p><span ><img className='sec-image' src={messageConsumedLogs} alt='messageConsumedLogs'  /></span></p>
+                </div>
+            </div>
+            <div className='section-content'>
+                <div className='heading-2'>Send serialized Objects</div>
+                <div className='heading 4'>
+                    <p><span>Instead of sending String, We can also send Objects. For that lets configure our Kafka Producer to produce Objects using Serialization. We'll use Order object which will have fields, orderId(int), orderName(String), orderQuantity(int)</span></p>
+                    <p><span ><img className='sec-image' src={ProducerTemplateObject} alt='ProducerTemplateObject'  /></span></p>
+                    <p><span>Lets modify our existing consumer to consume objects. </span></p>
+                    <p><span ><img className='sec-image' src={KafkaObjectConsumer} alt='KafkaObjectConsumer'  /></span></p>
+                    <p><span>And lets modify our rest endpoint to send Order Object once the api is called. </span></p>
+                    <p><span ><img className='sec-image' src={sendObjectToKafkaRest} alt='sendObjectToKafkaRest'  /></span></p>
+                    <p><span>Lets test this. Call the rest api, it should generate the Order Object and send it to kafka. </span></p>
+                    <p><span ><img className='sec-image' src={sendObjectApiCalled} alt='sendObjectApiCalled'  /></span></p>
+                    <p><span>Logs show that the Order object was consumed successfully.  </span></p>
+                    <p><span ><img className='sec-image' src={orderConsumedLogs} alt='orderConsumedLogs'  /></span></p>
+                    <p><span>Lets see in our Offset UI: </span></p>
+                    <p><span ><img className='sec-image' src={orderInOffserUI} alt='orderInOffserUI'  /></span></p>
                 </div>
             </div>
         </div>
