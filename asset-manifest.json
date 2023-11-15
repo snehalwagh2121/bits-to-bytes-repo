@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bits-to-bytes-repo/static/css/main.5ca72db2.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.cb69a4a9.js",
+    "main.js": "/bits-to-bytes-repo/static/js/main.358fb0d8.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/zookeeper-start.PNG": "/bits-to-bytes-repo/static/media/zookeeper-start.9e080b38b43b89059028.PNG",
     "static/media/kafka-start-server.PNG": "/bits-to-bytes-repo/static/media/kafka-start-server.0cd80db6ad095fd0bb8c.PNG",
@@ -27,6 +27,7 @@
     "static/media/exception.PNG": "/bits-to-bytes-repo/static/media/exception.be31c10ebe96f3ea1f9c.PNG",
     "static/media/logicTosendMail.PNG": "/bits-to-bytes-repo/static/media/logicTosendMail.e52b86d6a25c319a49fc.PNG",
     "static/media/excelUtil1.PNG": "/bits-to-bytes-repo/static/media/excelUtil1.5660a3e3874443c8a413.PNG",
+    "static/media/kafkaPropAfterHighThroughput.PNG": "/bits-to-bytes-repo/static/media/kafkaPropAfterHighThroughput.376256f9c786137f45fb.PNG",
     "static/media/jwtUtil.PNG": "/bits-to-bytes-repo/static/media/jwtUtil.e330bb96501e13811be0.PNG",
     "static/media/usernamePasswordAuthentication.PNG": "/bits-to-bytes-repo/static/media/usernamePasswordAuthentication.01cf49e7b7fe65beb488.PNG",
     "static/media/twoFactorAuthFilter.PNG": "/bits-to-bytes-repo/static/media/twoFactorAuthFilter.b4f7507b3f416c8a6399.PNG",
@@ -34,18 +35,22 @@
     "static/media/generateAndsendOtp.PNG": "/bits-to-bytes-repo/static/media/generateAndsendOtp.0fd2af0043e70e5b5fae.PNG",
     "static/media/BatchJobConfig.PNG": "/bits-to-bytes-repo/static/media/BatchJobConfig.1356078e90ca64fe7f31.PNG",
     "static/media/mailLogs.PNG": "/bits-to-bytes-repo/static/media/mailLogs.56f16e9288eae04a8973.PNG",
+    "static/media/idempotenceFalse.PNG": "/bits-to-bytes-repo/static/media/idempotenceFalse.fda08c0db02a5290e134.PNG",
     "static/media/eurekaWebpage.PNG": "/bits-to-bytes-repo/static/media/eurekaWebpage.a376f5d085f49fb7ec63.PNG",
     "static/media/CustomUserDetails.PNG": "/bits-to-bytes-repo/static/media/CustomUserDetails.91d1543222b04cf191a9.PNG",
     "static/media/restApiToSendMsg.PNG": "/bits-to-bytes-repo/static/media/restApiToSendMsg.0e93163c64c1ad1fbc92.PNG",
+    "static/media/kafkaPropBeforeHighThroughput.PNG": "/bits-to-bytes-repo/static/media/kafkaPropBeforeHighThroughput.d6221d9e27677fac966a.PNG",
     "static/media/buynumberfromlist.PNG": "/bits-to-bytes-repo/static/media/buynumberfromlist.2d3c3c7062615149aec3.PNG",
     "static/media/filterModified.PNG": "/bits-to-bytes-repo/static/media/filterModified.443c25aa48d711898cb0.PNG",
     "static/media/detailed-controller.PNG": "/bits-to-bytes-repo/static/media/detailed-controller.db7b41c251e3705e36a0.PNG",
     "static/media/customuserdetails.PNG": "/bits-to-bytes-repo/static/media/customuserdetails.e54203c3cf658eac03a3.PNG",
+    "static/media/IdempotentConfigFalse.PNG": "/bits-to-bytes-repo/static/media/IdempotentConfigFalse.c61f50d2d9727d965f00.PNG",
     "static/media/projectConfigModified.PNG": "/bits-to-bytes-repo/static/media/projectConfigModified.1a3048183f093c247339.PNG",
     "static/media/otpAuthentication.PNG": "/bits-to-bytes-repo/static/media/otpAuthentication.fe046aeb87dddf576c90.PNG",
     "static/media/customPasswordEncoderwEncryption.PNG": "/bits-to-bytes-repo/static/media/customPasswordEncoderwEncryption.3d16fa97433dd4b592e8.PNG",
     "static/media/kafka-installation.PNG": "/bits-to-bytes-repo/static/media/kafka-installation.8284afae2685e42be87d.PNG",
     "static/media/projectConfigUpdated.PNG": "/bits-to-bytes-repo/static/media/projectConfigUpdated.0e213236f5f2b037d73c.PNG",
+    "static/media/lingerbatchcompressConfigCode.PNG": "/bits-to-bytes-repo/static/media/lingerbatchcompressConfigCode.f63fb4ffdaa03a1ac036.PNG",
     "static/media/customUserDetailsService.PNG": "/bits-to-bytes-repo/static/media/customUserDetailsService.a5c8a8a60acdd5e66e98.PNG",
     "static/media/jwtAuthentication.PNG": "/bits-to-bytes-repo/static/media/jwtAuthentication.ffb8e959d9a7c21e1488.PNG",
     "static/media/eurekaUIWithAppl.PNG": "/bits-to-bytes-repo/static/media/eurekaUIWithAppl.9a5ab770087b36a07a4b.PNG",
@@ -194,11 +199,11 @@
     "static/media/start-producer.PNG": "/bits-to-bytes-repo/static/media/start-producer.7d7252e1549170d8ad23.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
     "main.5ca72db2.css.map": "/bits-to-bytes-repo/static/css/main.5ca72db2.css.map",
-    "main.cb69a4a9.js.map": "/bits-to-bytes-repo/static/js/main.cb69a4a9.js.map",
+    "main.358fb0d8.js.map": "/bits-to-bytes-repo/static/js/main.358fb0d8.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ca72db2.css",
-    "static/js/main.cb69a4a9.js"
+    "static/js/main.358fb0d8.js"
   ]
 }
