@@ -34,6 +34,11 @@ import sendObjectToKafkaRest from './images/kafka/sendObjectToKafkaRest.PNG';
 import sendObjectApiCalled from './images/kafka/sendObjectApiCalled.PNG';
 import orderConsumedLogs from './images/kafka/orderConsumedLogs.PNG';
 import orderInOffserUI from './images/kafka/orderInOffsetUI.PNG';
+import IdempotentConfigFalse from './images/kafka/IdempotentConfigFalse.PNG';
+import lingerBatchcompressConfigCode from './images/kafka/lingerbatchcompressConfigCode.PNG';
+import idempotenceFalse from './images/kafka/idempotenceFalse.PNG';
+import kafkaPropAfterHighThroughput from './images/kafka/kafkaPropAfterHighThroughput.PNG';
+import kafkaPropBeforeHighThroughput from './images/kafka/kafkaPropBeforeHighThroughput.PNG';
 
 function Kafka() {
     return (
@@ -137,6 +142,25 @@ function Kafka() {
                     <p><span ><img className='sec-image' src={orderConsumedLogs} alt='orderConsumedLogs'  /></span></p>
                     <p><span>Lets see in our Offset UI: </span></p>
                     <p><span ><img className='sec-image' src={orderInOffserUI} alt='orderInOffserUI'  /></span></p>
+                </div>
+            </div>
+            <div className='section-content'>
+                <div className='heading-2'>Kafka Configs</div>
+                <div className='heading 4'>
+                    <p><span>Compress kafka message, set linger.ms size, batch.size</span></p>
+                    <p><span><span className='bold'>linger.ms</span> refers to the time to wait before sending messages out to Kafka. 
+                    It defaults to 0, which the system interprets as ‘send messages as soon as they are ready to be sent’. 
+                    <span className='bold'>batch.size</span> refers to the maximum amount of data to be collected before sending the batch. 
+                    Kafka producers will send out the next batch of messages whenever linger.ms or batch.size is met first.</span></p>
+                    <p><span ><img className='sec-image' src={lingerBatchcompressConfigCode} alt='lingerBatchcompressConfigCode' /></span></p>
+                    <p><span>Logs before setting the config values: </span></p>
+                    <p><span ><img className='sec-image' src={kafkaPropBeforeHighThroughput} alt='kafkaPropBeforeHighThroughput' /></span></p>
+                    <p><span>Logs after setting the config values: </span></p>
+                    <p><span ><img className='sec-image' src={kafkaPropAfterHighThroughput} alt='kafkaPropAfterHighThroughput' /></span></p>
+                    <p><span>By default the idempotence value is set as true. We can modify the value to false if needed: </span></p>
+                    <p><span ><img className='sec-image' src={IdempotentConfigFalse} alt='IdempotentConfigFalse' /></span></p>
+                    <p><span>Logs after setting the idempotence as false: </span></p>
+                    <p><span ><img className='sec-image' src={idempotenceFalse} alt='idempotenceFalse' /></span></p>
                 </div>
             </div>
         </div>
