@@ -45,7 +45,6 @@ function Kafka() {
         <div className='main-page'>
         <div className="page-heading">KAFKA</div>
         <div className='page-content'>
-            <p><span>Intro </span></p>
             <div className='heading-2'>Download and install kafka</div>
             <div className='section-content'>
                 <div className='heading 4'>
