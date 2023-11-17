@@ -31,6 +31,10 @@
 .bold{
     font-weight: bold;
 }
+.bold-italics{
+    font-weight: bold;
+    font-style: italic;
+}
 .link{
     text-decoration: none;
     color: blue;
