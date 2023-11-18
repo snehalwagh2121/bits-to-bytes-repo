@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bits-to-bytes-repo/static/css/main.38826a53.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.ff1d3a8e.js",
+    "main.js": "/bits-to-bytes-repo/static/js/main.5a7d0c7d.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/zookeeper-start.PNG": "/bits-to-bytes-repo/static/media/zookeeper-start.9e080b38b43b89059028.PNG",
     "static/media/kafka-start-server.PNG": "/bits-to-bytes-repo/static/media/kafka-start-server.0cd80db6ad095fd0bb8c.PNG",
@@ -50,9 +50,11 @@
     "static/media/customuserdetails.PNG": "/bits-to-bytes-repo/static/media/customuserdetails.e54203c3cf658eac03a3.PNG",
     "static/media/IdempotentConfigFalse.PNG": "/bits-to-bytes-repo/static/media/IdempotentConfigFalse.c61f50d2d9727d965f00.PNG",
     "static/media/projectConfigModified.PNG": "/bits-to-bytes-repo/static/media/projectConfigModified.1a3048183f093c247339.PNG",
+    "static/media/rmiImageCommand.PNG": "/bits-to-bytes-repo/static/media/rmiImageCommand.428a1e340ac3bafe210d.PNG",
     "static/media/otpAuthentication.PNG": "/bits-to-bytes-repo/static/media/otpAuthentication.fe046aeb87dddf576c90.PNG",
     "static/media/customPasswordEncoderwEncryption.PNG": "/bits-to-bytes-repo/static/media/customPasswordEncoderwEncryption.3d16fa97433dd4b592e8.PNG",
     "static/media/kafka-installation.PNG": "/bits-to-bytes-repo/static/media/kafka-installation.8284afae2685e42be87d.PNG",
+    "static/media/logsCommand.PNG": "/bits-to-bytes-repo/static/media/logsCommand.149b6dadc248d228c2b9.PNG",
     "static/media/projectConfigUpdated.PNG": "/bits-to-bytes-repo/static/media/projectConfigUpdated.0e213236f5f2b037d73c.PNG",
     "static/media/lingerbatchcompressConfigCode.PNG": "/bits-to-bytes-repo/static/media/lingerbatchcompressConfigCode.f63fb4ffdaa03a1ac036.PNG",
     "static/media/productServiceContainerLogs.PNG": "/bits-to-bytes-repo/static/media/productServiceContainerLogs.4339fea4d39b9c2114ce.PNG",
@@ -105,6 +107,7 @@
     "static/media/schemasql.PNG": "/bits-to-bytes-repo/static/media/schemasql.ee7be2b9b4802417d798.PNG",
     "static/media/appPasswords.PNG": "/bits-to-bytes-repo/static/media/appPasswords.2f7f7a4ab0a8498bf770.PNG",
     "static/media/userdetails.PNG": "/bits-to-bytes-repo/static/media/userdetails.e82d11ad539483b72255.PNG",
+    "static/media/interactivePortNameCommands.PNG": "/bits-to-bytes-repo/static/media/interactivePortNameCommands.1f90c3f7021d95360330.PNG",
     "static/media/authenticationInterface.PNG": "/bits-to-bytes-repo/static/media/authenticationInterface.cf08957d07204f35ffc3.PNG",
     "static/media/circuitBreakerProperties2.PNG": "/bits-to-bytes-repo/static/media/circuitBreakerProperties2.d5046470086d3d052aa3.PNG",
     "static/media/twilioConstants.PNG": "/bits-to-bytes-repo/static/media/twilioConstants.39c679f78e9a897fddea.PNG",
@@ -127,6 +130,7 @@
     "static/media/postmanRequest.PNG": "/bits-to-bytes-repo/static/media/postmanRequest.712dc16f00be89f9d925.PNG",
     "static/media/otpInResponse.PNG": "/bits-to-bytes-repo/static/media/otpInResponse.71f894e1195874a53385.PNG",
     "static/media/newAppPassword.PNG": "/bits-to-bytes-repo/static/media/newAppPassword.4986dce0220647b073bd.PNG",
+    "static/media/imagesCommand.PNG": "/bits-to-bytes-repo/static/media/imagesCommand.4f761bddbb468c4a4d3a.PNG",
     "static/media/successfulLoginToken.PNG": "/bits-to-bytes-repo/static/media/successfulLoginToken.696647fbb8d245cb5160.PNG",
     "static/media/pojo.PNG": "/bits-to-bytes-repo/static/media/pojo.7f304524b05baecbd20d.PNG",
     "static/media/gatewayProperties.PNG": "/bits-to-bytes-repo/static/media/gatewayProperties.7d8402be92850824ab2e.PNG",
@@ -164,6 +168,7 @@
     "static/media/messagesInOffset.PNG": "/bits-to-bytes-repo/static/media/messagesInOffset.20ffeee4719a78eb62ec.PNG",
     "static/media/jwtTokenLogs.PNG": "/bits-to-bytes-repo/static/media/jwtTokenLogs.d293b58a6b3bf5bfcf40.PNG",
     "static/media/eurekaServerAnnotation.PNG": "/bits-to-bytes-repo/static/media/eurekaServerAnnotation.22695bda7afa2b6fc8a8.PNG",
+    "static/media/rmContainerCommand.PNG": "/bits-to-bytes-repo/static/media/rmContainerCommand.7bec480d8fd5621b0003.PNG",
     "static/media/authenticationProviderInterface.PNG": "/bits-to-bytes-repo/static/media/authenticationProviderInterface.655902ab560267e20a7d.PNG",
     "static/media/twilioAccountInfo.PNG": "/bits-to-bytes-repo/static/media/twilioAccountInfo.4ade5e6bca81be9cb6ca.PNG",
     "static/media/userbuildermethod.PNG": "/bits-to-bytes-repo/static/media/userbuildermethod.141f845a0d30148bd40f.PNG",
@@ -197,6 +202,7 @@
     "static/media/messageSentToProducerConsumer.PNG": "/bits-to-bytes-repo/static/media/messageSentToProducerConsumer.a469c118351d407ebebe.PNG",
     "static/media/login-page.PNG": "/bits-to-bytes-repo/static/media/login-page.bbff8386435defbda6b5.PNG",
     "static/media/msgSentToConsumer.PNG": "/bits-to-bytes-repo/static/media/msgSentToConsumer.d5d5f84428bbfa1641f3.PNG",
+    "static/media/stopCommand.PNG": "/bits-to-bytes-repo/static/media/stopCommand.9f912a2134a03a4acb9e.PNG",
     "static/media/authenticationsuccess.PNG": "/bits-to-bytes-repo/static/media/authenticationsuccess.33b719aaea843b7d20c3.PNG",
     "static/media/filePath.PNG": "/bits-to-bytes-repo/static/media/filePath.ca5aadf81cd18657fc68.PNG",
     "static/media/restApiSuccessResponse.PNG": "/bits-to-bytes-repo/static/media/restApiSuccessResponse.b59f48cd4f8ac4200a51.PNG",
@@ -217,15 +223,16 @@
     "static/media/successful-login.PNG": "/bits-to-bytes-repo/static/media/successful-login.df7144dd9594a52e440b.PNG",
     "static/media/productListApiCall.PNG": "/bits-to-bytes-repo/static/media/productListApiCall.91a1f67e1fc4d7f3322b.PNG",
     "static/media/productServiceApiHitwithDocker.PNG": "/bits-to-bytes-repo/static/media/productServiceApiHitwithDocker.b265c91efd5c1c37c32a.PNG",
+    "static/media/detachedStartMode.PNG": "/bits-to-bytes-repo/static/media/detachedStartMode.39f3f68b1f9c3bf3d5db.PNG",
     "static/media/list-topics.PNG": "/bits-to-bytes-repo/static/media/list-topics.ccb540fa698cb2c67f9c.PNG",
     "static/media/start-producer.PNG": "/bits-to-bytes-repo/static/media/start-producer.7d7252e1549170d8ad23.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
     "main.38826a53.css.map": "/bits-to-bytes-repo/static/css/main.38826a53.css.map",
-    "main.ff1d3a8e.js.map": "/bits-to-bytes-repo/static/js/main.ff1d3a8e.js.map",
+    "main.5a7d0c7d.js.map": "/bits-to-bytes-repo/static/js/main.5a7d0c7d.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38826a53.css",
-    "static/js/main.ff1d3a8e.js"
+    "static/js/main.5a7d0c7d.js"
   ]
 }
