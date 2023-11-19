@@ -34,6 +34,7 @@ import dockerCompose1 from './images/docker/dockerCompose1.PNG';
 import dockerComposeUi from './images/docker/dockerComposeFromUi.PNG';
 import dockerCOmposeUp from './images/docker/dockerCOmposeUp.PNG';
 import dockerComposeUpDetached from './images/docker/dockerComposeUpDetached.PNG';
+import dockerComposeWithBuild from './images/docker/dockerComposeWithBuild.PNG';
 
 function Docker() {
     return (
@@ -194,6 +195,8 @@ function Docker() {
                         <p><span ><img className='sec-image' src={dockerComposeUpDetached} alt='dockerComposeUpDetached'  /></span></p>
                         <p><span>We can stop the running containers that are defined in our Docker Compose configuration using command: </span></p> 
                         <p><span className='bold-italics'>docker-compose stop</span></p>
+                        <p><span>You can also pass the coammnd to build an image from Dockerfile path in your docker-compose file:</span></p> 
+                        <p><span ><img className='sec-image' src={dockerComposeWithBuild} alt='dockerComposeWithBuild'  /></span></p>
                     </div>
                 </div>
             </div>
