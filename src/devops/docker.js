@@ -30,6 +30,10 @@ import imagesCommand from './images/docker/imagesCommand.PNG';
 import rmiImageCommand from './images/docker/rmiImageCommand.PNG';
 import rmContainerCommand from './images/docker/rmContainerCommand.PNG';
 import logsCommand from './images/docker/logsCommand.PNG';
+import dockerCompose1 from './images/docker/dockerCompose1.PNG';
+import dockerComposeUi from './images/docker/dockerComposeFromUi.PNG';
+import dockerCOmposeUp from './images/docker/dockerCOmposeUp.PNG';
+import dockerComposeUpDetached from './images/docker/dockerComposeUpDetached.PNG';
 
 function Docker() {
     return (
@@ -165,6 +169,31 @@ function Docker() {
                             <li>Docker volume</li>    
                         </ul></p>
 
+                    </div>
+                </div>
+
+                <div className='heading-2'>Docker Compose</div>
+                <div className='section-content'>
+                    <div className='heading 4'>
+                        <p><span>Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define all the services, networks, and volumes for your application in a single docker-compose.yml file, making it easier to manage and deploy complex applications with multiple components. </span></p>
+                        <p><span>Some key concepts and features of docker compose: </span></p>
+                        <p><span><ul>
+                            <li>Services</li>
+                            <li>Networks</li>
+                            <li>Volumes</li>
+                            <li>Environment Variables</li>
+                            <li>Scaling</li>
+                        </ul></span></p>
+                        <p><span>Lets create a sample docker-compose which will build containers from the images available for order application and products application. Lets create a network between then too. Expose them on their indivisual ports.</span></p>
+                        <p><span ><img className='sec-image' src={dockerCompose1} alt='dockerCompose1'  /></span></p>
+                        <p><span>Lets run the docker compose up command and hit order applciation's endpoint:</span></p> 
+                        <p><span ><img className='sec-image' src={dockerCOmposeUp} alt='dockerCOmposeUp'  /></span></p>
+                        <p><span>Now lets see in the docker desktop how our containers are looking: </span></p> 
+                        <p><span ><img className='sec-image' src={dockerComposeUi} alt='dockerComposeUi'  /></span></p>
+                        <p><span>docker-compose up, runs the container in interactive mode. We can run them in detached mode by adding -d at the end of the docker-compose up command:</span></p> 
+                        <p><span ><img className='sec-image' src={dockerComposeUpDetached} alt='dockerComposeUpDetached'  /></span></p>
+                        <p><span>We can stop the running containers that are defined in our Docker Compose configuration using command: </span></p> 
+                        <p><span className='bold-italics'>docker-compose stop</span></p>
                     </div>
                 </div>
             </div>
