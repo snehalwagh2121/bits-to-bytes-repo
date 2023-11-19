@@ -199,6 +199,23 @@ function Docker() {
                         <p><span ><img className='sec-image' src={dockerComposeWithBuild} alt='dockerComposeWithBuild'  /></span></p>
                     </div>
                 </div>
+
+                <div className='heading-2'>Docker Networking</div>
+                <div className='section-content'>
+                    <div className='heading 4'>
+                        <p><span><span className='bold'>BUILD</span> This command is used to create an image from a set of insteuctions provided in a file called Dockerfile. </span></p>
+                        <p><span>Docker networking provides complete isolation for docker containers. It means a user can link a docker container to many networks. It requires very less OS instances to run the workload.</span></p> 
+                        <p><span>Types of Docker Network:
+                        <ol>
+                            <li>Bridge: It is the default network driver. We can use this when different containers communicate with the same docker host.</li>
+                            <li>Host: When you don’t need any isolation between the container and host then it is used.</li>
+                            <li>Overlay: For communication with each other, it will enable the swarm services.</li>
+                            <li>None: It disables all networking.</li>
+                            <li>macvlan: This network assigns MAC(Media Access control) address to the containers which look like a physical address.</li>
+                        </ol>    
+                        </span></p>
+                    </div>
+                </div>
             </div>
         </div>
         );
