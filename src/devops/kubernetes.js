@@ -48,8 +48,87 @@ function kubernetes() {
                         <p><span>List all resources in all namespaces: <span className='italics'>kubectl get resource-type --all-namespaces</span></span></p>
                         <p><span>List all resources sorted with a specific field: <span className='italics'>kubectl get resource-type --sort-by=field</span></span></p>
                         <p><span>List all resources with a specific label selector: <span className='italics'>kubectl get resource-type -l label-selector</span></span></p>
-                        <p><span>List all resources with a specific field selector: <span className='italics'>kubectl get resource-type --field-selector=field-selectot</span></span></p>
+                        <p><span>List all resources with a specific field selector: <span className='italics'>kubectl get resource-type --field-selector=field-selector</span></span></p>
                         <p><span>List all resources in a specific namespace: <span className='italics'>kubectl get resource-type -n namespace</span></span></p>
+
+                        <div className='heading-3'>DELETING RESOURCES: </div>
+                        <p><span>Delete a resource: <span className='italics'>kubectl delete resource-type resource-name</span></span></p>
+                        <p><span>Delete multiple resources: <span className='italics'>kubectl delete resource-type1 resource-name1 resource-type2 resource-name2</span></span></p>
+                        <p><span>Delete all resources of a specific type: <span className='italics'>kubectl delete resource-type --all</span></span></p>
+                        <p><span>Delete the resource by using url: <span className='italics'>kubectl delete -f https://url-to-resource-definition.yaml</span></span></p>
+                        <p><span>Delete all resources in a specific namespace: <span className='italics'>kubectl delete resource-type -all -n namespace</span></span></p>
+
+                        <div className='heading-3'>COPYING FILES AND DIRECTORIES: </div>
+                        <p><span>Copy files and directories to a container: <span className='italics'>kubectl cp local-path namespace/pod-name:container-path</span></span></p>
+                        <p><span>Copy files and directories from a container: <span className='italics'>kubectl cp namespace/pod-name:container-path local-path</span></span></p>
+                        <p><span>Copy files from one container to another within the same pod: <span className='italics'>kubectl cp namespace/pod-name:source-container-path destination-namespace/destination-pod-name:destination-container-path</span></span></p>
+                        <p><span>Copy files form one container to another using a different pod: <span className='italics'>kubectl cp namespace/source-pod-name:source-container-path destination-namespace/destination-pod-name:destination-container-path</span></span></p>
+
+                        <div className='heading-3'>PATHCHING RESOURCES: </div>
+                        <p><span>Patch a resource using a JSON or YAML document: <span className='italics'>kubectl patch resource-type resource-name -p patch-document</span></span></p>
+                        <p><span>Patch a resource using a JSON or YAML file: <span className='italics'>kubectl patch resource-type resource-name --path-file=patch-file</span></span></p>
+
+                        <div className='heading-3'>SCALING RESOURCES: </div>
+                        <p><span>Scale a deployment: <span className='italics'>kubectl scale deployment deployment-name --replicas=replica-count</span></span></p>
+                        <p><span>Scale a statefulset: <span className='italics'>kubectl scale statefulset statefulset-name --replicas=replica-count</span></span></p>
+                        <p><span>Scale a replica set: <span className='italics'>kubectl scale replicaset replicaset-name --replicas=replica-count</span></span></p>
+
+                        <div className='heading-3'>POD MANAGEMENT: </div>
+                        <p><span>Create a pod from a YAML file: <span className='italics'>kubectl create -f pod-definition.yaml</span></span></p>
+                        <p><span>List all pods in a cluster: <span className='italics'>kubectl get pods</span></span></p>
+                        <p><span>Describe a specific pod: <span className='italics'>kubectl describe pod pod-name</span></span></p>
+                        <p><span>Get logs from a pod: <span className='italics'>kubectl logs pod-name</span></span></p>
+                        <p><span>Stream logs from a pod: <span className='italics'>kubectl logs -f pod-name</span></span></p>
+                        <p><span>Get logs with a specific label: <span className='italics'>kubectl logs -l label-key=label-value</span></span></p>
+                        <p><span>Exec into a pod: <span className='italics'>kubectl exec -it pod-name -- command</span></span></p>
+                        <p><span>Delete a pod: <span className='italics'>kubectl delete pod pod-name</span></span></p>
+                        <p><span>Create a pod with a name: <span className='italics'>kubectl create pod pod-name</span></span></p>
+                        <p><span>List all pods in a namespace: <span className='italics'>kubectl get pod -n namespace-name</span></span></p>
+
+                        <div className='heading-3'>DEPLOYMENT MANAGEMENT: </div>
+                        <p><span>Create deployments: <span className='italics'>kubectl create deployment deployment-name --image=image-name</span></span></p>
+                        <p><span>List all deployments: <span className='italics'>kubectl get deployment</span></span></p>
+                        <p><span>Describe a specific deployment: <span className='italics'>kubectl describe deployment deployment-name</span></span></p>
+                        <p><span>Scale a deployment: <span className='italics'>kubectl scale deployment deployment-name --replicas=replica-count</span></span></p>
+                        <p><span>Update a deployment's image: <span className='italics'>kubectl set image deployment/deployment-name container-name=new-image-name</span></span></p>
+                        <p><span>Rollout status of a deployment: <span className='italics'>kubectl rollout status deployment/deployment-name</span></span></p>
+                        <p><span>Pause a deployment rollout: <span className='italics'>kubectl rollout pause deployment/deployment-name</span></span></p>
+                        <p><span>Resume a deployment rollout: <span className='italics'>kubectl rollout resume deployment/deployment-name</span></span></p>
+                        <p><span>Rollback a deployment to a prev revision: <span className='italics'>kubectl rollout undo deployment/deployment-name</span></span></p>
+                        <p><span>Rollback a deployment to a specific revision: <span className='italics'>kubectl rollout undo deployment/deployment-name --to-revision=revision-number</span></span></p>
+                        <p><span>Delete a deploymet name: <span className='italics'>kubectl delete deployment deployment-name</span></span></p>
+
+                        <div className='heading-3'>REPLICASETS MANAGEMENT: </div>
+                        <p><span>Create a replicaset: <span className='italics'>kubectl create -f replicaset-definition.yaml</span></span></p>
+                        <p><span>Create all replicaSets: <span className='italics'>kubectl get replicasets</span></span></p>
+                        <p><span>Describe a specific replicaset: <span className='italics'>kubectl describe replicaset replicaset-name</span></span></p>
+                        <p><span>Scale a replicaset: <span className='italics'>kubectl scale replicaset replicaset-name --replicas=replica-count</span></span></p>
+
+                        <div className='heading-3'>SERVICE MANAGEMENT: </div>
+                        <p><span>Create a service: <span className='italics'>kubectl create service service-type service-name --tcp=port</span></span></p>
+                        <p><span>List all services: <span className='italics'>kubectl get services</span></span></p>
+                        <p><span>Expose a deployment as a service: <span className='italics'>kubectl expose deployment deployment-name --port=port</span></span></p>
+                        <p><span>Describe a specific service: <span className='italics'>kubectl describe service service-name</span></span></p>
+                        <p><span>Delete a service: <span className='italics'>kubectl delete service service-name</span></span></p>
+                        <p><span>Get information about a service: <span className='italics'>kubectl get endpoints service-name</span></span></p>
+                        
+                        <div className='heading-3'>CONFIG MAPS AND SECRETS: </div>
+                        <p><span>Create a config amp from a file: <span className='italics'>kubectl create configmap comfig-map-name --from-file=path-to-file</span></span></p>
+                        <p><span>Create a secret: <span className='italics'>kubectl create secret secret-type secret-name --from -literal=key=value</span></span></p>
+                        <p><span>List all config maps: <span className='italics'>kubectl get configmaps</span></span></p>
+                        <p><span>List all secrets: <span className='italics'>kubectl get secrets</span></span></p>
+                        <p><span>Describe a specific config map: <span className='italics'>kubectl describe confignamp configmap-name</span></span></p>
+                        <p><span>Describe a specific secret: <span className='italics'>kubectl describe secret secret-name</span></span></p>
+                        <p><span>Delete a specific secret: <span className='italics'>kubectl delete secret secret-name</span></span></p>
+                        <p><span>Delete a specific config map: <span className='italics'>kubectl delete configmap configmap-name</span></span></p>
+
+                        <div className='heading-3'>NETWORKING: </div>
+                        <p><span>Port forward to a pod: <span className='italics'>kubectl port-forward pod-name local-port:pod-port</span></span></p>
+                        <p><span>Expose a deployment as a NodePort service: <span className='italics'>kubectl expose deployment deployment-name --type=NodePort --port=port</span></span></p>
+                        <p><span>Create an Ingress resource: <span className='italics'>kubectl create ingress ingress-name --rule=host/path=servicename --service-port</span></span></p>
+                        <p><span>Get information about an ingress: <span className='italics'>kubectl describe ingress ingress-name</span></span></p>
+                        <p><span>Retrieves the most value from the first rule of the specified ingress resource: <span className='italics'>kubectl get ingress ingress-name -o hsonpath='.spec.rules[0].host'</span></span></p>
+
                     </div>
                 </div>
             </div>
