@@ -21,7 +21,7 @@ import ExternalizeConfig from './devops/externalizeConfig';
 import CircuitBreaker from './devops/circuitBreaker';
 import Kafka from './devops/kafka';
 import Docker from './devops/docker';
-import Kubernatis from './devops/kubernatis';
+import Kubernetes from './devops/kubernetes';
 import Jenkins from './devops/jenkins';
 import Monitoring from './devops/monitoring';
 
@@ -58,7 +58,7 @@ function App() {
         {selectedNavItem === 'CircuitBreaker' && <CircuitBreaker />}
         {selectedNavItem === 'Kafka' && <Kafka />}
         {selectedNavItem === 'Docker' && <Docker />}
-        {selectedNavItem === 'Kubernatis' && <Kubernatis />}
+        {selectedNavItem === 'Kubernetes' && <Kubernetes />}
         {selectedNavItem === 'Jenkins' && <Jenkins />}
         {selectedNavItem === 'Monitoring' && <Monitoring />}
       </div>

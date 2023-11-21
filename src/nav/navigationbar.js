@@ -85,8 +85,8 @@ function NavigationBar({ handleNavigationClick }) {
                   <div className='subtopic-name' onClick={() => handleNavigationClick('Docker')}>
                     <div className='subtopic-name-heading'>DOCKER</div>
                   </div>
-                  <div className='subtopic-name' onClick={() => handleNavigationClick('Kubernatis')}>
-                    <div className='subtopic-name-heading'>KUBERNATIS</div>
+                  <div className='subtopic-name' onClick={() => handleNavigationClick('Kubernetes')}>
+                    <div className='subtopic-name-heading'>KUBERNETES</div>
                   </div>
                   <div className='subtopic-name' onClick={() => handleNavigationClick('Jenkins')}>
                     <div className='subtopic-name-heading'>JENKINS</div>
