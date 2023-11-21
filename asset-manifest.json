@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bits-to-bytes-repo/static/css/main.38826a53.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.e7ce3edb.js",
+    "main.css": "/bits-to-bytes-repo/static/css/main.d28036bc.css",
+    "main.js": "/bits-to-bytes-repo/static/js/main.7c165322.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/zookeeper-start.PNG": "/bits-to-bytes-repo/static/media/zookeeper-start.9e080b38b43b89059028.PNG",
     "static/media/kafka-start-server.PNG": "/bits-to-bytes-repo/static/media/kafka-start-server.0cd80db6ad095fd0bb8c.PNG",
@@ -232,12 +232,12 @@
     "static/media/list-topics.PNG": "/bits-to-bytes-repo/static/media/list-topics.ccb540fa698cb2c67f9c.PNG",
     "static/media/start-producer.PNG": "/bits-to-bytes-repo/static/media/start-producer.7d7252e1549170d8ad23.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
-    "main.38826a53.css.map": "/bits-to-bytes-repo/static/css/main.38826a53.css.map",
-    "main.e7ce3edb.js.map": "/bits-to-bytes-repo/static/js/main.e7ce3edb.js.map",
+    "main.d28036bc.css.map": "/bits-to-bytes-repo/static/css/main.d28036bc.css.map",
+    "main.7c165322.js.map": "/bits-to-bytes-repo/static/js/main.7c165322.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38826a53.css",
-    "static/js/main.e7ce3edb.js"
+    "static/css/main.d28036bc.css",
+    "static/js/main.7c165322.js"
   ]
 }
