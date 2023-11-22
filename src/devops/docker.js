@@ -145,7 +145,7 @@ function Docker() {
                         <p><span className='bold-italics'>docker push image-name</span></p>
 
                         <p><span><span className='bold'>LOGS</span> This command is used to get the logs of a runnning container.</span></p>
-                        <p><span className='bold-italics'>docker push image-name</span></p>
+                        <p><span className='bold-italics'>docker logs container-name</span></p>
                         <p><span ><img className='sec-image' src={logsCommand} alt='logsCommand'  /></span></p>
 
                         <p><span><span className='bold'>RM</span> This command is used to remove a stopped container.</span></p>

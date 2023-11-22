@@ -1,4 +1,24 @@
 import React from 'react';
+import '../springsec/basics.css';
+import miniKubeDashboard from './images/kubernetes/miniKubeDashboard.PNG';
+import podLogsUiOption from './images/kubernetes/podLogsUiOption.PNG';
+import miniKubeUi from './images/kubernetes/miniKubeUi.PNG';
+import portForward from './images/kubernetes/portForward.PNG';
+import logsUi from './images/kubernetes/logsUi.PNG';
+import siteNotAccessibleAfterDeployment from './images/kubernetes/siteNotAccessibleAfterDeployment.PNG';
+import startPodSuccess from './images/kubernetes/startPodSuccess.PNG';
+import dockerPullInMinikube from './images/kubernetes/dockerpullInMinikube.PNG';
+import dockerImagePush from './images/kubernetes/dockerImagePush.PNG';
+import podLogs from './images/kubernetes/podLogs.PNG';
+import getPods from './images/kubernetes/getPods.PNG';
+import createDeploymentButIssue from './images/kubernetes/createDeploymentButIssue.PNG';
+import miniKubeSetDockerEnv from './images/kubernetes/miniKubeSetDockerEnv.PNG';
+import miniKubeDockerEnv from './images/kubernetes/miniKubeDockerEnv.PNG';
+import miniKubeStartStatus from './images/kubernetes/miniKubeStartStatus.PNG';
+import minikubeStart from './images/kubernetes/minikubeStart.PNG';
+import stopStatus from './images/kubernetes/stopStatus.PNG';
+import orderService from './images/kubernetes/orderService.PNG';
+import apiHitSuccess from './images/kubernetes/apiHitSuccess.PNG';
 
 function kubernetes() {
     return (
@@ -129,6 +149,59 @@ function kubernetes() {
                         <p><span>Get information about an ingress: <span className='italics'>kubectl describe ingress ingress-name</span></span></p>
                         <p><span>Retrieves the most value from the first rule of the specified ingress resource: <span className='italics'>kubectl get ingress ingress-name -o hsonpath='.spec.rules[0].host'</span></span></p>
 
+                    </div>
+                </div>
+
+                <div className='heading-2'>KUBERNETES SPRING BOOT INTEGRATION</div>
+                <div className='section-content'>
+                    <div className='heading 4'>
+                        <div className='heading-3'>RUN MINIKUBE: </div>
+                        <p><span>check status of minikube using command: <span className='italics'>minikube status</span></span></p>
+                        <p><span ><img className='sec-image' src={stopStatus} alt='stopStatus'  /></span></p>
+                        <p><span>If the status is sopped, start minikube using command: <span className='italics'>minikube start</span></span></p>
+                        <p><span ><img className='sec-image' src={minikubeStart} alt='minikubeStart'  /></span></p>
+                        <p><span>check status again: <span className='italics'>minikube status</span></span></p>
+                        <p><span ><img className='sec-image' src={miniKubeStartStatus} alt='miniKubeStartStatus'  /></span></p>
+
+                        <div className='heading-3'>SET DOCKER ENV: </div>
+                        <p><span>step 1: <span className='italics'>minikube docker-env</span></span></p>
+                        <p><span ><img className='sec-image' src={miniKubeDockerEnv} alt='miniKubeDockerEnv'  /></span></p>
+                        <p><span>Copy paste the last line from above output <span className='italics'>@FOR /f "tokens=*" %i IN ('minikube -p minikube docker-env') DO @%i</span></span></p>
+                        <p><span ><img className='sec-image' src={miniKubeSetDockerEnv} alt='miniKubeSetDockerEnv'  /></span></p>
+
+                        <div className='heading-3'>CREATE DEPLOYMENT: </div>
+                        <p><span>Command to create deployment from docker object: <span className='italics'>kubectl create deployment deployment-name --image=image-name:tag --port=port-number</span></span></p>
+                        <p><span>Command to get all deployments: <span className='italics'>kubectl get deployment</span></span></p>
+                        <p><span ><img className='sec-image' src={createDeploymentButIssue} alt='createDeploymentButIssue'  /></span></p>
+                        <p><span>Ready state shows 0/1. This means our deployment was not success. Lets check pods: <span className='italics'>kubectl get pods</span></span></p>
+                        <p><span ><img className='sec-image' src={getPods} alt='getPods'  /></span></p>
+                        <p><span>pod ready state also shows 0/1. This means our pod was not success. Lets check logs: <span className='italics'>kubectl logs pod-name</span></span></p>
+                        <p><span ><img className='sec-image' src={podLogs} alt='podLogs'  /></span></p>
+                        <p><span>Logs shows that the deployment was not able to fetch the image from repository. So lets push our image to our docker hub <span className='italics'>docker push reposioryname/imagename:tag</span></span></p>
+                        <p><span ><img className='sec-image' src={dockerImagePush} alt='dockerImagePush'  /></span></p>
+                        <p><span>The image name should be of format repositoryname/imagename. Else it will throw request access exception while piushing the image. So as seen in the above snapshot, we have renamed the image to proper format and pushed the image to docker hub.</span></p>
+                        <p><span>Lets ssh into minikube and pull docker image: <span className='italics'>minikube ssh <br/>docker pull repository-name/image-name:tag</span></span></p>
+                        <p><span ><img className='sec-image' src={dockerPullInMinikube} alt='dockerPullInMinikube'  /></span></p>
+                        <p><span>Now that we have the image, lets delete our prev deployment and create a new one: <span className='italics'>kubectl delete deployment deployment_name <br/> kubectl create deployment deployment-name --image=image-name:tag --port=port-number</span></span></p>
+                        <p><span ><img className='sec-image' src={startPodSuccess} alt='startPodSuccess'  /></span></p>
+                        <p><span>Now we see that our deployment was successful and our application is running successfully in pod</span></p>
+
+                        <div className='heading-3'>EXPOSE SERVICE: </div>
+                        <p><span>Even after the deployment was successful, still we are not able to access our application from browser. </span></p>
+                        <p><span ><img className='sec-image' src={siteNotAccessibleAfterDeployment} alt='siteNotAccessibleAfterDeployment'  /></span></p>
+                        <p><span>This is because our deployment is not exposed to outside world, for that we need to create service.<span className='italics'>kubectl expose deployment deployment-name --type=NodePort</span></span></p>
+                        <p><span ><img className='sec-image' src={orderService} alt='orderService'  /></span></p>
+                        <p><span>port forward: <span className='italics'>kubectl port-forward service/service-name local_port:minikube_port</span></span></p>
+                        <p><span ><img className='sec-image' src={portForward} alt='portForward'  /></span></p>
+                        <p><span>Now we can access our application: </span></p>
+                        <p><span ><img className='sec-image' src={apiHitSuccess} alt='apiHitSuccess'  /></span></p>
+                        <p><span>Minikube also provides way to access the dashboard usin command: <span className='italics'>minikube dashboard</span></span></p>
+                        <p><span ><img className='sec-image' src={miniKubeDashboard} alt='miniKubeDashboard'  /></span></p>
+                        <p><span>Dashboard view:</span></p>
+                        <p><span ><img className='sec-image' src={miniKubeUi} alt='miniKubeUi'  /></span></p>
+                        <p><span>We can also check logs from dashboard by clicking on the logs of pods:</span></p>
+                        <p><span ><img className='sec-image' src={podLogsUiOption} alt='podLogsUiOption'  /></span></p>
+                        <p><span ><img className='sec-image' src={logsUi} alt='logsUi'  /></span></p>
                     </div>
                 </div>
             </div>
