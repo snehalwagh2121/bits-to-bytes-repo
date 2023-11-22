@@ -19,6 +19,9 @@ import minikubeStart from './images/kubernetes/minikubeStart.PNG';
 import stopStatus from './images/kubernetes/stopStatus.PNG';
 import orderService from './images/kubernetes/orderService.PNG';
 import apiHitSuccess from './images/kubernetes/apiHitSuccess.PNG';
+import deleteDeploymentNService from './images/kubernetes/deleteDeployemntNService.PNG';
+import stopMinikube from './images/kubernetes/stopMinikube.PNG';
+import deleteMinikube from './images/kubernetes/deleteMinikube.PNG';
 
 function kubernetes() {
     return (
@@ -202,10 +205,21 @@ function kubernetes() {
                         <p><span>We can also check logs from dashboard by clicking on the logs of pods:</span></p>
                         <p><span ><img className='sec-image' src={podLogsUiOption} alt='podLogsUiOption'  /></span></p>
                         <p><span ><img className='sec-image' src={logsUi} alt='logsUi'  /></span></p>
+
+                        <div className='heading-3'>STOP AND DELETE: </div>
+                        <p><span>Delete service and deployment : </span></p>
+                        <p><span className='italics'>kubectl delete service service-name</span></p>
+                        <p><span className='italics'>kubectl delete deployment deployment-name</span></p>
+                        <p><span ><img className='sec-image' src={deleteDeploymentNService} alt='deleteDeploymentNService'  /></span></p>
+                        <p><span>STOP minikube : <span className='italics'>minikube stop</span> </span></p>
+                        <p><span ><img className='sec-image' src={stopMinikube} alt='stopMinikube'  /></span></p>
+                        <p><span>DELETE minikube : <span className='italics'>minikube delete</span> </span></p>
+                        <p><span ><img className='sec-image' src={deleteMinikube} alt='deleteMinikube'  /></span></p>
+                        
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>   
         );
 }
 
