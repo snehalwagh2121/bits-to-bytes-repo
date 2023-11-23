@@ -22,6 +22,11 @@ import apiHitSuccess from './images/kubernetes/apiHitSuccess.PNG';
 import deleteDeploymentNService from './images/kubernetes/deleteDeployemntNService.PNG';
 import stopMinikube from './images/kubernetes/stopMinikube.PNG';
 import deleteMinikube from './images/kubernetes/deleteMinikube.PNG';
+import orderEndpointHit2 from './images/kubernetes/orderEndpointHit2.PNG';
+import serviceYamlFile from './images/kubernetes/serviceYamlFile.PNG';
+import deploymentYamlFile from './images/kubernetes/deploymentYamlFile.PNG';
+import kubectlApplyService from './images/kubernetes/kubectlApplyService.PNG';
+import kubectlApplyDeployment from './images/kubernetes/kubectlApplyDeployment.PNG';
 
 function kubernetes() {
     return (
@@ -216,6 +221,59 @@ function kubernetes() {
                         <p><span>DELETE minikube : <span className='italics'>minikube delete</span> </span></p>
                         <p><span ><img className='sec-image' src={deleteMinikube} alt='deleteMinikube'  /></span></p>
                         
+                    </div>
+                </div>
+
+                <div className='heading-2'>KUBERNETES SERVICE AND DEPLOYMENTS USING FILES</div>
+                <div className='section-content'>
+                    <div className='heading 4'>
+                        <div className='heading-3'>DEPOYMENT.YAML: </div>
+                        <p><span>Deployment file for our order service: </span></p>
+                        <p><span ><img className='sec-image' src={deploymentYamlFile} alt='deploymentYamlFile'  /></span></p>
+                        <p><span>kind: <span className='italics'>Specifies the type of file like Deployment/Service</span></span></p>
+                        <p><span>metadata.name: <span className='italics'>name of your deployment</span></span></p>
+                        <p><span>spec.selector.matchLabels.app: <span className='italics'>This should match with our template.metadata.labels.app</span></span></p>
+                        <p><span>replicas: <span className='italics'>Describes number of pods</span></span></p>
+                        <p><span>spec.containers.name: <span className='italics'>Name of our docker container</span></span></p>
+                        <p><span>spec.containers.image: <span className='italics'>Name of our docker image</span></span></p>
+                        <p><span>spec.containers.imagePullPolicy: <span className='italics'>If image is not downloaded then download from docker hub</span></span></p>
+                        <p><span>spec.containers.ports.containerPort: <span className='italics'> port that the container is running on in the cluster</span></span></p>
+                    </div>
+                    <div className='heading 4'>
+                        <div className='heading-3'>EXECUTE DEPOYMENT.YAML: </div>
+                        <p><span>Execute the deployment.yaml file using command: <span className='italics'>kubectl apply -f deployment.yaml</span></span></p>
+                        <p><span ><img className='sec-image' src={kubectlApplyDeployment} alt='kubectlApplyDeployment'  /></span></p>
+                        <p><span>Check deployment status: <span className='italics'>kubectl get deployment</span></span></p>
+                        <p><span>Check pod status: <span className='italics'>kubectl get pods</span></span></p>
+                        <p><span>Check pod logs: <span className='italics'>kubectl logs pod-name</span></span></p>
+                        <p><span>If there are any issues you, here are some list of commands that would help to troubleshoot:</span></p>
+                        <p><span>get pod description: <span className='italics'>kubectl describe pod pod-name</span></span></p>
+                        <p><span>get all pods with namespace: <span className='italics'>kubectl get pods -A</span></span></p>
+                        <p><span>get nodes: <span className='italics'>kubectl get nodes -o wide</span></span></p>
+                        <p><span>Get pods description in json format: <span className='italics'> kubectl get pods -o json</span></span></p>
+                        <p><span>Get pods and container names in clean format: <span className='italics'> kubectl get pod -o="custom-columns=NAME:.metadata.name,INIT-CONTAINERS:.spec.initContainers[*].name,CONTAINERS:.spec.containers[*].name"</span></span></p>
+                    </div>
+                    <div className='heading 4'>
+                        <div className='heading-3'>SERVICE.YAML: </div>
+                        <p><span>Service file for our order service: </span></p>
+                        <p><span ><img className='sec-image' src={serviceYamlFile} alt='serviceYamlFile'  /></span></p>
+                        <p><span>kind: <span className='italics'>Specifies the type of file like Deployment/Service</span></span></p>
+                        <p><span>metadata.name: <span className='italics'>name of your service</span></span></p>
+                        <p><span>spec.selector.app: <span className='italics'>This should match with our template.metadata.labels.app of deployment file</span></span></p>
+                        <p><span>ports: <span className='italics'>Connects the cluster port with service port</span></span></p>
+                        <p><span>spec.type: <span className='italics'>Type of service</span></span></p>  
+                    </div>
+                    <div className='heading 4'>
+                        <div className='heading-3'>EXECUTE SERVICE.YAML: </div>
+                        <p><span>Execute the service.yaml file using command: <span className='italics'>kubectl apply -f service.yaml</span></span></p>
+                        <p><span ><img className='sec-image' src={kubectlApplyService} alt='kubectlApplyService'  /></span></p>
+                        <p><span>get service status: <span className='italics'>kubectl get service</span></span></p>
+                        <p><span>port forward: <span className='italics'>kubectl port-forward service/order-service-metadata 9010:9010</span></span></p>
+                    </div>
+                    <div className='heading 4'>
+                        <div className='heading-3'>ACCESS ENDPOINT: </div>
+                        <p><span>We can access our endpoint successfully from browser:</span></p>
+                        <p><span ><img className='sec-image' src={orderEndpointHit2} alt='orderEndpointHit2'  /></span></p>
                     </div>
                 </div>
             </div>
