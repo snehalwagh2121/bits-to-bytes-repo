@@ -27,6 +27,10 @@ import serviceYamlFile from './images/kubernetes/serviceYamlFile.PNG';
 import deploymentYamlFile from './images/kubernetes/deploymentYamlFile.PNG';
 import kubectlApplyService from './images/kubernetes/kubectlApplyService.PNG';
 import kubectlApplyDeployment from './images/kubernetes/kubectlApplyDeployment.PNG';
+import editDeployment from './images/kubernetes/editDeployment.PNG';
+import editDeployemntImage from './images/kubernetes/editDeployemntImage.PNG';
+import deploymentsTerminatingCreating from './images/kubernetes/deploymentsTerminatingCreating.PNG';
+import newApiHitwithVersion from './images/kubernetes/newApiHitwithVersion.PNG';
 
 function kubernetes() {
     return (
@@ -274,6 +278,27 @@ function kubernetes() {
                         <div className='heading-3'>ACCESS ENDPOINT: </div>
                         <p><span>We can access our endpoint successfully from browser:</span></p>
                         <p><span ><img className='sec-image' src={orderEndpointHit2} alt='orderEndpointHit2'  /></span></p>
+                    </div>
+                </div>
+
+                <div className='heading-2'>SCALING WITH KUBERNETES</div>
+                <div className='section-content'>
+                    <div className='heading 4'>
+                        <p><span>Lets suppose you want to scale your application, we can do that just by creating replicas. Kubernetes will automatically create load balancers and will handle our requests for us. </span></p>
+                        <p><span>But you might think that we would have to delete the deployment and create a new one. Well no, 
+                            we can edit deployments of the already running deployment using command: <span className='italics'>kubectl edit deplyment deployment-name</span></span></p>
+                        <p><span ><img className='sec-image' src={editDeployment} alt='editDeployment'  /></span></p>
+                        <p><span>Create deployment, port forward and hit api:</span></p>
+                        <p><span ><img className='sec-image' src={apiHitSuccess} alt='apiHitSuccess'  /></span></p>
+                        <p><span>Isnt this cool. Well thats not enough, Suppose we have a code change, now to depoy previously we had to delete container and start a new one, now with kubernetes we just edit the deployment and kubernetes will automatically terminate the existing deployments and create the new ones.</span></p>
+                        <p><span>I have modified the order endpoint response message and created a new image- snehalwagh2121/orderservice2:v3 :</span></p>
+                        <p><span ><img className='sec-image' src={editDeployment} alt='editDeployment'  /></span></p>
+                        <p><span>Edit deployment and save file</span></p>
+                        <p><span ><img className='sec-image' src={editDeployemntImage} alt='editDeployemntImage'  /></span></p>
+                        <p><span>Deployments Terminating And getting created: </span></p>
+                        <p><span ><img className='sec-image' src={deploymentsTerminatingCreating} alt='deploymentsTerminatingCreating'  /></span></p>
+                        <p><span>Hit api and check message: </span></p>
+                        <p><span ><img className='sec-image' src={newApiHitwithVersion} alt='newApiHitwithVersion'  /></span></p>
                     </div>
                 </div>
             </div>
