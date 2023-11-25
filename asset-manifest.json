@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bits-to-bytes-repo/static/css/main.d28036bc.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.11c54a50.js",
+    "main.js": "/bits-to-bytes-repo/static/js/main.cc2ae1d6.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/zookeeper-start.PNG": "/bits-to-bytes-repo/static/media/zookeeper-start.9e080b38b43b89059028.PNG",
     "static/media/kafka-start-server.PNG": "/bits-to-bytes-repo/static/media/kafka-start-server.0cd80db6ad095fd0bb8c.PNG",
@@ -114,6 +114,7 @@
     "static/media/productServiceDependency.PNG": "/bits-to-bytes-repo/static/media/productServiceDependency.c368401ba4e8370eec3f.PNG",
     "static/media/schemasql.PNG": "/bits-to-bytes-repo/static/media/schemasql.ee7be2b9b4802417d798.PNG",
     "static/media/appPasswords.PNG": "/bits-to-bytes-repo/static/media/appPasswords.2f7f7a4ab0a8498bf770.PNG",
+    "static/media/editDeployment.PNG": "/bits-to-bytes-repo/static/media/editDeployment.5a9bfa2717d6f0b9587a.PNG",
     "static/media/userdetails.PNG": "/bits-to-bytes-repo/static/media/userdetails.e82d11ad539483b72255.PNG",
     "static/media/interactivePortNameCommands.PNG": "/bits-to-bytes-repo/static/media/interactivePortNameCommands.1f90c3f7021d95360330.PNG",
     "static/media/authenticationInterface.PNG": "/bits-to-bytes-repo/static/media/authenticationInterface.cf08957d07204f35ffc3.PNG",
@@ -130,6 +131,7 @@
     "static/media/minikubeStart.PNG": "/bits-to-bytes-repo/static/media/minikubeStart.bb5af5a38ec7276ac66e.PNG",
     "static/media/EmployeePojo.PNG": "/bits-to-bytes-repo/static/media/EmployeePojo.5af41658c49b5520a09d.PNG",
     "static/media/inspectCommand2.PNG": "/bits-to-bytes-repo/static/media/inspectCommand2.0c273c0412a9009124de.PNG",
+    "static/media/editDeployemntImage.PNG": "/bits-to-bytes-repo/static/media/editDeployemntImage.195da6ccdbb02abf1808.PNG",
     "static/media/userdetailsmapper.PNG": "/bits-to-bytes-repo/static/media/userdetailsmapper.5e40e3b61b3092764e4f.PNG",
     "static/media/otpgenerated.PNG": "/bits-to-bytes-repo/static/media/otpgenerated.7766a38923ad5fa32ffd.PNG",
     "static/media/controllerclass.PNG": "/bits-to-bytes-repo/static/media/controllerclass.3263604b864c94342800.PNG",
@@ -145,6 +147,7 @@
     "static/media/pojo.PNG": "/bits-to-bytes-repo/static/media/pojo.7f304524b05baecbd20d.PNG",
     "static/media/gatewayProperties.PNG": "/bits-to-bytes-repo/static/media/gatewayProperties.7d8402be92850824ab2e.PNG",
     "static/media/connection-established.PNG": "/bits-to-bytes-repo/static/media/connection-established.880ec95e20eb9958e42f.PNG",
+    "static/media/deploymentsTerminatingCreating.PNG": "/bits-to-bytes-repo/static/media/deploymentsTerminatingCreating.743b26ab16a8b0ffec32.PNG",
     "static/media/gatewayDiscoverAnnotation.PNG": "/bits-to-bytes-repo/static/media/gatewayDiscoverAnnotation.c999d82a583ed00c83c3.PNG",
     "static/media/h2Db.PNG": "/bits-to-bytes-repo/static/media/h2Db.527b1d0b830bd3c08f5f.PNG",
     "static/media/passwordEncoderInterface.PNG": "/bits-to-bytes-repo/static/media/passwordEncoderInterface.6364f279a0c73efc8b13.PNG",
@@ -242,6 +245,7 @@
     "static/media/getPods.PNG": "/bits-to-bytes-repo/static/media/getPods.fe52fea4b694ba20c039.PNG",
     "static/media/studentResponseGateway.PNG": "/bits-to-bytes-repo/static/media/studentResponseGateway.bf58ab1dc83cf3f3913a.PNG",
     "static/media/collegeProperties.PNG": "/bits-to-bytes-repo/static/media/collegeProperties.7f23857e61de21d2067e.PNG",
+    "static/media/newApiHitwithVersion.PNG": "/bits-to-bytes-repo/static/media/newApiHitwithVersion.e6c04189d9801c5505e8.PNG",
     "static/media/orderEndpointHit2.PNG": "/bits-to-bytes-repo/static/media/orderEndpointHit2.be3413529b83f401a5f7.PNG",
     "static/media/circuitBreakerRestCall1.PNG": "/bits-to-bytes-repo/static/media/circuitBreakerRestCall1.625eee59663ad3f92418.PNG",
     "static/media/studentProperties.PNG": "/bits-to-bytes-repo/static/media/studentProperties.8811fc9c3144050413bb.PNG",
@@ -260,11 +264,11 @@
     "static/media/start-producer.PNG": "/bits-to-bytes-repo/static/media/start-producer.7d7252e1549170d8ad23.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
     "main.d28036bc.css.map": "/bits-to-bytes-repo/static/css/main.d28036bc.css.map",
-    "main.11c54a50.js.map": "/bits-to-bytes-repo/static/js/main.11c54a50.js.map",
+    "main.cc2ae1d6.js.map": "/bits-to-bytes-repo/static/js/main.cc2ae1d6.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d28036bc.css",
-    "static/js/main.11c54a50.js"
+    "static/js/main.cc2ae1d6.js"
   ]
 }
