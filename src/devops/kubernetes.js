@@ -161,6 +161,14 @@ function kubernetes() {
                         <p><span>Get information about an ingress: <span className='italics'>kubectl describe ingress ingress-name</span></span></p>
                         <p><span>Retrieves the most value from the first rule of the specified ingress resource: <span className='italics'>kubectl get ingress ingress-name -o hsonpath='.spec.rules[0].host'</span></span></p>
 
+                        <div className='heading-3'>TROUBLESHOOTING: </div>
+                        <p><span>Deep dive into a pod to see how many restarts: <span className='italics'>kubectl pod-dive container-name</span></span></p>
+                        <p><span>Describe a pod using namespace: <span className='italics'>kubectl describe pod pod-name --namespace namespace-name</span></span></p>
+                        <p><span>Scale a deployment: <span className='italics'>kubectl scale deployment deployment-name --replicas=replica-count</span></span></p>
+                        <p><span>See rollout history: <span className='italics'>kubectl rollout history deployment deployment-name</span></span></p>
+                        <p><span>See logs of previous pod: <span className='italics'>kubectl logs pod-name --previous</span></span></p>
+                        <p><span>Exec into a pod: <span className='italics'>kubectl exec -it pod-name sh</span></span></p>
+
                     </div>
                 </div>
 
