@@ -27,9 +27,8 @@ function springbasics() {
                 <div className='page-content'>
                     <div className='heading-2'>CREATE A SAMPLE PROJECT</div>
                     <div className='section-content'>
-                        <div className='heading-3'>DEPENDENCY</div>
-                        <div className='heading 4'>
-                            <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
+                        <div className='heading-4'>
+                            <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a> with following dependencies: </span></p>
                             <p><span ><img className='sec-image' src={dependencyImage} alt='dependency'  /></span></p>
                             <p><span>We need to add the Spring Security dependency in the project. By default when we run the project, we will get a default password which will be used to authenticate a user.</span></p>
                             <p><span><img className='sec-image' alt='password' src={springPassword} /></span></p>
@@ -40,7 +39,7 @@ function springbasics() {
                     </div>
                     <div className='section-content'>
                         <div className='heading-3'>SPRING SECURITY ARCHITECTURE</div>
-                        <div className='heading 4'>
+                        <div className='heading-4'>
                             <p><span><img className='sec-image' alt='dependency' src={springSecArch} /></span></p>
                             <p><span> Every request which comes will pass through the <span className='bold'>Authentication filter</span>. Spring provides BasicAuthenticationFilter which authenticates users based on the credentials. Although, we can have our own custom filters and place them before or after the position of a known filter. This is called <span className='italics'>filter chaining.</span></span></p>
                             <p><span> The Authentication filter sends the http request to <span className='bold'>Authentication Manager</span>. Authentication manager is the one responsible to call the appropriate Authentication Provider. </span></p>
@@ -51,7 +50,7 @@ function springbasics() {
                     </div>
                     <div className='section-content'>
                         <div className='heading-3'>USER DETAILS</div>
-                        <div className='heading 4'>
+                        <div className='heading-4'>
                             <p><span> UserDetails interface has 5 main methods which we need to implement: </span></p>
                             <p><span><img className='sec-image' alt='dependency' src={springUserDetails} /></span></p>
                             <p><span> Sample implementation: </span></p>
@@ -78,7 +77,7 @@ function springbasics() {
                     </div>
                     <div className='section-content'>
                         <div className='heading-3'>PASSWORD ENCODER</div>
-                        <div className='heading 4'>
+                        <div className='heading-4'>
                             <p><span> Password Encoder interface provided by Spring Security: </span></p>
                             <p><span><img className='sec-image' alt='dependency' src={passwordEncoderInterface} /></span></p>
                             <p><span> The purpose of encode(Charsequence rawpassword) method is to provide encryption or hash for a given password. martches(CharSequence rawPassword, String encodedPassword) method is used to match the encoded String with a rawPassword. upgradeEncoding(CharSequence encodedPassword) method when overriden to reutn true will encode the password again for better security.</span></p>
@@ -91,7 +90,7 @@ function springbasics() {
                     </div>
                     <div className='section-content'>
                         <div className='heading-3'>AUTHENTICATION PROVIDER</div>
-                        <div className='heading 4'>
+                        <div className='heading-4'>
                             <p><span> The Authentication Provider is where we will find the conditions and instructions that decide whenther to authenticate the request or not. The Authentication interface represents the authentication request event and holds the details of the user.  </span></p>
                             <p><span> Authentication Interface : </span></p>
                             <p><span><img className='sec-image' alt='dependency' src={authenticationInterface} /></span></p>
@@ -102,7 +101,7 @@ function springbasics() {
                     </div>
                     <div className='section-content'>
                         <div className='heading-3'>SAMPLE IMPLEMENTATION OF SPRING SECURITY </div>
-                        <div className='heading 4'>
+                        <div className='heading-4'>
                             <p><a className='link' href='https://github.com/snehalwagh2121/SpringSecurityDemo'> GITHUB LINK </a></p>
                         </div>
                     </div>

@@ -10,7 +10,7 @@ function SpringLogging() {
             <div className="page-heading">SPRING LOGGING</div>
             <div className='page-content'>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>mostly used logging pattern: </span></p>
                         <p><span ><img className='sec-image' src={mostlyUsedPattern} alt='mostlyUsedPattern'  /></span></p>
                         <p><span className='bold'>clr means color. The following colors are supported:</span></p>

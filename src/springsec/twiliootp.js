@@ -20,7 +20,7 @@ function springTwilioOtp() {
                 <div className="page-heading">SPRING TWILIO OTP</div>
                 <div className='page-content'>
                     <div className='section-content'>
-                        <div className='heading 4'>
+                        <div className='heading-4'>
                             <p><span> Would'nt it be great to get OTP on mobile instead of in response? Well its interesting to me. Lets see how to implement that logic using the code from the previous topic (2 factor auth): </span></p>
                             <p><span> First we need to create a trail account in twilio and buy a number from which we will be sending the messages. </span></p>
                             <p><span ><img className='sec-image' src={buynumberfromlist} alt='buynumberfromlist'  /></span></p>

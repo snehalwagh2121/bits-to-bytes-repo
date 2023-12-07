@@ -43,13 +43,13 @@ function Docker() {
             <div className='page-content'>
                 <div className='heading-2'>Download and install docker desktop</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Follow the steps provided in the docker docs to install and setup docker desktop<a href='https://docs.docker.com/desktop/install/windows-install/'>docs.docker.com</a></span></p>
                     </div>
                 </div>
                 <div className='heading-2'>Create 2 Rest applications</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Order service dependency: </span></p>
                         <p><span ><img className='sec-image' src={orderServiceDependency} alt='orderServiceDependency'  /></span></p>
                         <p><span>Create a controller class and expose an endpoint: </span></p>
@@ -66,7 +66,7 @@ function Docker() {
                 </div>
                 <div className='heading-2'>Creating Docker files, building images and running containers</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Build both the projects and create a Dockerfile in both the projects and specify the commands as follows: </span></p>
                         <p><span ><img className='sec-image' src={orderServiceDockerfile} alt='orderServiceDockerfile'  /></span></p>
                         <p><span ><img className='sec-image' src={productServiceDockerfile} alt='productServiceDockerfile'  /></span></p>
@@ -88,7 +88,7 @@ function Docker() {
                 </div>
                 <div className='heading-2'>Docker commands</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span><span className='bold'>BUILD</span> This command is used to create an image from a set of insteuctions provided in a file called Dockerfile. </span></p>
                         <p><span className='bold-italics'>docker build -t imageName .</span></p>
                         <p><span ><img className='sec-image' src={dockerBuildRunOrder} alt='dockerBuildRunOrder'  /></span></p>
@@ -175,7 +175,7 @@ function Docker() {
 
                 <div className='heading-2'>Docker Compose</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define all the services, networks, and volumes for your application in a single docker-compose.yml file, making it easier to manage and deploy complex applications with multiple components. </span></p>
                         <p><span>Some key concepts and features of docker compose: </span></p>
                         <p><span><ul>
@@ -202,7 +202,7 @@ function Docker() {
 
                 <div className='heading-2'>Docker Networking</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span><span className='bold'>BUILD</span> This command is used to create an image from a set of insteuctions provided in a file called Dockerfile. </span></p>
                         <p><span>Docker networking provides complete isolation for docker containers. It means a user can link a docker container to many networks. It requires very less OS instances to run the workload.</span></p> 
                         <p><span>Types of Docker Network:

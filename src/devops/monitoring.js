@@ -34,7 +34,7 @@ function Monitoring() {
             <div className='page-content'>
                 <div className='heading-2'>PROJECT SETUP</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Create a new Spring boot project using link: <a href='https://start.spring.io/'>start.spring.io</a> and following dependencies: </span></p>
                         <p><span ><img className='sec-image' src={dependency} alt='dependency'  /></span></p>
                         <p><span>Expose an endpoint and log some statements: </span></p>
@@ -49,7 +49,7 @@ function Monitoring() {
                 </div>
                 <div className='heading-2'>PROMETHEUS UI INTEGRATION WITH OUR APPLICATION</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Download latest version of prometheus from: <a href='https://prometheus.io/download/'>prometheus.io</a></span></p>
                         <p><span>Open Prometheus.yaml file which would be present in the same folder as prometheus executable: </span></p>
                         <p><span ><img className='sec-image' src={prometheusYamlFile} alt='prometheusYamlFile'  /></span></p>
@@ -67,7 +67,7 @@ function Monitoring() {
                 </div>
                 <div className='heading-2'>GRAFANA INTEGRATION WITH OUR APPLICATION</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Download and install the latest version of grafana from: <a href='https://grafana.com/grafana/download?platform=windows'>grafana.com</a></span></p>
                         <p><span>After installing, grafana should be accesible from your browser at localhost:3000 </span></p>
                         <p><span ><img className='sec-image' src={grafanaLogin} alt='grafanaLogin'  /></span></p>

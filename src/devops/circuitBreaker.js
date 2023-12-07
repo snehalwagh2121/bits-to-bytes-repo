@@ -20,7 +20,7 @@ function CircuitBreaker() {
                 This service will call our products service endpoint, and if the products service is down, instead of sending 500 Internal server error in response, we will get a default message. </span></p>
             <div className='heading-2'>Products Service</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                     <p><span ><img className='sec-image' src={productsServiceDependency} alt='productsServiceDependency'  /></span></p>
                     <p><span>Lets create a sample endpoint which will send a message in response. And lets run this application on 9001 port.</span></p>
@@ -31,7 +31,7 @@ function CircuitBreaker() {
             </div>
             <div className='heading-2'>Circuit Breaker Service</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                     <p><span ><img className='sec-image' src={circuitBreakerDependency} alt='circuitBreakerDependency'  /></span></p>
                     <p><span>Lets add the aop dependency manually in the application.</span></p>
@@ -45,7 +45,7 @@ function CircuitBreaker() {
             </div>
             <div className='heading-2'>Test</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>Keep both the circuit breaker and products applications UP and call the endpoint of circuit breaker service which will inturn call products service</span></p>
                     <p><span ><img className='sec-image' src={circuitBreakerRestCall1} alt='circuitBreakerRestCall1'  /></span></p>
                     <p><span>We see that the response is received. Now Stop the products service and call the endpoint again. </span></p>

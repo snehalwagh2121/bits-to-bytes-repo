@@ -47,7 +47,7 @@ function Kafka() {
         <div className='page-content'>
             <div className='heading-2'>Download and install kafka</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>Downlaod latest version of kafka from <a href='https://kafka.apache.org/downloads'>kafka.apache.org</a></span></p>
                     <p><span ><img className='sec-image' src={kafkaDownload} alt='kafkaDownload'  /></span></p>
                     <p><span>Unzip the downloaded file you'll find the follwoing folders inside:</span></p>
@@ -58,7 +58,7 @@ function Kafka() {
             </div>
             <div className='heading-2'>Run Kafka, Zookper and Offset</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>Go inside bin\windows directory where you can find the kafka and zookeeper batch files</span></p>
                     <p><span ><img className='sec-image' src={kafkaBinDir} alt='kafkaBinDir'  /></span></p>
                     <p><span>Inside config directory you can find the configs for zookeeper and kafka server</span></p>
@@ -83,7 +83,7 @@ function Kafka() {
             </div>
             <div className='heading-2'>Kakfa Producer Consumer</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>start producer using command</span></p>
                     <p><span className='italics'>.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic bits-to-bytes-topic </span></p>
                     <p><span ><img className='sec-image' src={startProducer} alt='startProducer'  /></span></p>
@@ -100,7 +100,7 @@ function Kafka() {
             </div>
             <div className='heading-2'>Kakfa Spring Integration</div>
             <div className='section-content'>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>Create a new project with following dependencies: </span></p>
                     <p><span ><img className='sec-image' src={dependency} alt='dependency'  /></span></p>
                     <p><span>Enable Kafka Annotation </span></p>
@@ -128,7 +128,7 @@ function Kafka() {
             </div>
             <div className='section-content'>
                 <div className='heading-2'>Send serialized Objects</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>Instead of sending String, We can also send Objects. For that lets configure our Kafka Producer to produce Objects using Serialization. We'll use Order object which will have fields, orderId(int), orderName(String), orderQuantity(int)</span></p>
                     <p><span ><img className='sec-image' src={ProducerTemplateObject} alt='ProducerTemplateObject'  /></span></p>
                     <p><span>Lets modify our existing consumer to consume objects. </span></p>
@@ -145,7 +145,7 @@ function Kafka() {
             </div>
             <div className='section-content'>
                 <div className='heading-2'>Kafka Configs</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>Compress kafka message, set linger.ms size, batch.size</span></p>
                     <p><span><span className='bold'>linger.ms</span> refers to the time to wait before sending messages out to Kafka. 
                     It defaults to 0, which the system interprets as ‘send messages as soon as they are ready to be sent’. 

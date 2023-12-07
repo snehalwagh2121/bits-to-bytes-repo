@@ -26,7 +26,7 @@ function SpringBatchTasklet() {
                 <div className='heading-2'>CREATE A SAMPLE PROJECT</div>
                 <div className='section-content'>
                     <div className='heading-3'>DEPENDENCY</div>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                         <p><span ><img className='sec-image' src={dependencyImage} alt='dependency'  /></span></p>
                         <p><span>Lets create a sample tasklet flow with loggers so that we understand if the flow is working or not. Later we'll add logic to fetch data from DB and insert in a excel file.</span></p>

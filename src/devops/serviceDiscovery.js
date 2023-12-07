@@ -18,7 +18,7 @@ function ServiceDiscovery() {
                 <p><span>Lets create a eureka-server project and 2 applciaitons which we will register with the eureka server.</span></p>
                 <div className='heading-2'>EUREKA SERVER</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                         <p><span ><img className='sec-image' src={dependencyImage} alt='dependencyImage'  /></span></p>
                         <p><span>Lets add the @EnableDiscoveryServer annotation to the application.</span></p>
@@ -31,7 +31,7 @@ function ServiceDiscovery() {
                 </div>
                 <div className='heading-2'>EUREKA Clients</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                         <p><span ><img className='sec-image' src={eurekaClient1dependency} alt='eurekaClient1dependency'  /></span></p>
                         <p><span ><img className='sec-image' src={eurekaClient2dependency} alt='eurekaClient2dependency'  /></span></p>

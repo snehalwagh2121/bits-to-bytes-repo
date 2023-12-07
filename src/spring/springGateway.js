@@ -23,52 +23,52 @@ function SpringGateway() {
             <div className='heading-2'>CREATE A STUDENT APPLICATION</div>
             <div className='section-content'>
                 <div className='heading-2'>DEPENDENCY</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                     <p><span ><img className='sec-image' src={studentDependency} alt='studentDependency'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>STUDENT POJO</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={studentPojo} alt='studentPojo'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>STUDENT CONTROLLER</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={studentController} alt='studentController'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>STUDENT PROPERTIES</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={studentProperties} alt='studentProperties'  /></span></p>
                 </div>
             </div>
             <div className='heading-2'>CREATE A COLLEGE APPLICATION</div>
             <div className='section-content'>
                 <div className='heading-2'>DEPENDENCY</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                     <p><span ><img className='sec-image' src={collegeDependency} alt='collegeDependency'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>COLLEGE POJO</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={collegePojo} alt='collegePojo'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>COLLEGE CONTROLLER</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={collegeController} alt='collegeController'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>COLLEGE PROPERTIES</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={collegeProperties} alt='collegeProperties'  /></span></p>
                 </div>
             </div>
@@ -76,20 +76,20 @@ function SpringGateway() {
             <div className='heading-2'>CREATE OUR GATEWAY APPLICATION</div>
             <div className='section-content'>
                 <div className='heading-2'>DEPENDENCY</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                     <p><span ><img className='sec-image' src={gatewayDependency} alt='gatewayDependency'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>ANNOTATION FOR DISCOVERY</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={gatewayDiscoveryAnnotation} alt='gatewayDiscoveryAnnotation'  /></span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>ROUTES SPECIFICATION</div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={gatewayProperties} alt='gatewayProperties'  /></span></p>
                 </div>
             </div>
@@ -97,14 +97,14 @@ function SpringGateway() {
             <div className='heading-2'>LETS TEST</div>
             <div className='section-content'>
                 <div className='heading-2'>CALL STUDENT details endpoint from gateway: </div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={studentResponseGateway} alt='studentResponseGateway'  /></span></p>
                     <p><span > Note the 8010 port which we have specified for gateway applcaition. since we are passing /student in the url, the request is getting forwarded to student application.</span></p>
                 </div>
             </div>
             <div className='section-content'>
                 <div className='heading-2'>CALL COLLEGE details endpoint from gateway: </div>
-                <div className='heading 4'>
+                <div className='heading-4'>
                     <p><span ><img className='sec-image' src={collegeResponseGateway} alt='collegeResponseGateway'  /></span></p>
                     <p><span > Just like for students, when we pass /college in the url, the request is getting forwarded to college application.</span></p>
                 </div>

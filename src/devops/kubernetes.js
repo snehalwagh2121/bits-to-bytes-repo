@@ -39,14 +39,14 @@ function kubernetes() {
             <div className='page-content'>
                 <div className='heading-2'>Download and install kubectl and minikube</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Follow the steps provided in the doc to download and install kubectl <a href='https://kubernetes.io/docs/tasks/tools/'>kubernetes.io</a></span></p>
                         <p><span>Follow the steps provided in the doc to download and install minikube <a href='https://minikube.sigs.k8s.io/docs/start/'>minikube</a></span></p>
                     </div>
                 </div>
                 <div className='heading-2'>KUBERNETES COMMANDS</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>CLUSTER MANAGEMENT: </div>
                         <p><span>get cluster info: <span className='italics'>kubectl cluster-infokubectl</span></span></p>
                         <p><span>View all the nodes present in the cluster: <span className='italics'>kubectl get nodes</span></span></p>
@@ -174,7 +174,7 @@ function kubernetes() {
 
                 <div className='heading-2'>KUBERNETES SPRING BOOT INTEGRATION</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>RUN MINIKUBE: </div>
                         <p><span>check status of minikube using command: <span className='italics'>minikube status</span></span></p>
                         <p><span ><img className='sec-image' src={stopStatus} alt='stopStatus'  /></span></p>
@@ -238,7 +238,7 @@ function kubernetes() {
 
                 <div className='heading-2'>KUBERNETES SERVICE AND DEPLOYMENTS USING FILES</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>DEPOYMENT.YAML: </div>
                         <p><span>Deployment file for our order service: </span></p>
                         <p><span ><img className='sec-image' src={deploymentYamlFile} alt='deploymentYamlFile'  /></span></p>
@@ -251,7 +251,7 @@ function kubernetes() {
                         <p><span>spec.containers.imagePullPolicy: <span className='italics'>If image is not downloaded then download from docker hub</span></span></p>
                         <p><span>spec.containers.ports.containerPort: <span className='italics'> port that the container is running on in the cluster</span></span></p>
                     </div>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>EXECUTE DEPOYMENT.YAML: </div>
                         <p><span>Execute the deployment.yaml file using command: <span className='italics'>kubectl apply -f deployment.yaml</span></span></p>
                         <p><span ><img className='sec-image' src={kubectlApplyDeployment} alt='kubectlApplyDeployment'  /></span></p>
@@ -265,7 +265,7 @@ function kubernetes() {
                         <p><span>Get pods description in json format: <span className='italics'> kubectl get pods -o json</span></span></p>
                         <p><span>Get pods and container names in clean format: <span className='italics'> kubectl get pod -o="custom-columns=NAME:.metadata.name,INIT-CONTAINERS:.spec.initContainers[*].name,CONTAINERS:.spec.containers[*].name"</span></span></p>
                     </div>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>SERVICE.YAML: </div>
                         <p><span>Service file for our order service: </span></p>
                         <p><span ><img className='sec-image' src={serviceYamlFile} alt='serviceYamlFile'  /></span></p>
@@ -275,14 +275,14 @@ function kubernetes() {
                         <p><span>ports: <span className='italics'>Connects the cluster port with service port</span></span></p>
                         <p><span>spec.type: <span className='italics'>Type of service</span></span></p>  
                     </div>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>EXECUTE SERVICE.YAML: </div>
                         <p><span>Execute the service.yaml file using command: <span className='italics'>kubectl apply -f service.yaml</span></span></p>
                         <p><span ><img className='sec-image' src={kubectlApplyService} alt='kubectlApplyService'  /></span></p>
                         <p><span>get service status: <span className='italics'>kubectl get service</span></span></p>
                         <p><span>port forward: <span className='italics'>kubectl port-forward service/order-service-metadata 9010:9010</span></span></p>
                     </div>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <div className='heading-3'>ACCESS ENDPOINT: </div>
                         <p><span>We can access our endpoint successfully from browser:</span></p>
                         <p><span ><img className='sec-image' src={orderEndpointHit2} alt='orderEndpointHit2'  /></span></p>
@@ -291,7 +291,7 @@ function kubernetes() {
 
                 <div className='heading-2'>SCALING WITH KUBERNETES</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Lets suppose you want to scale your application, we can do that just by creating replicas. Kubernetes will automatically create load balancers and will handle our requests for us. </span></p>
                         <p><span>But you might think that we would have to delete the deployment and create a new one. Well no, 
                             we can edit deployments of the already running deployment using command: <span className='italics'>kubectl edit deplyment deployment-name</span></span></p>

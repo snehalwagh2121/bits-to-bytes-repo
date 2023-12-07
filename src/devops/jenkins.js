@@ -42,13 +42,13 @@ function Jenkins() {
             <div className='page-content'>
                 <div className='heading-2'>Download and install Jenkins</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Here is a very detailed documentation for downlaoding and installing jenkins in you local system: <a href='https://www.guru99.com/download-install-jenkins.html'>https://www.guru99.com/download-install-jenkins.html</a></span></p>
                     </div>
                 </div>
                 <div className='heading-2'>Getting started with Jenkins</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>After installing Jenkins, we can create a new Project : </span></p>
                         <p><span ><img className='sec-image' src={newItem} alt='newItem'  /></span></p>
                         <p><span>Provide a name to the project : </span></p>
@@ -70,7 +70,7 @@ function Jenkins() {
                 </div>
                 <div className='heading-2'>Integrating Spring Boot Project with Jenkins</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Create a new SPring boot project with following dependencies and expose a demo endpoint : </span></p>
                         <p><span ><img className='sec-image' src={springDependency} alt='springDependency'  /></span></p>
                         <p><span ><img className='sec-image' src={springEndpoint} alt='springEndpoint'  /></span></p>
@@ -101,7 +101,7 @@ function Jenkins() {
                 </div>
                 <div className='heading-2'>Create Docker Images and Push to DOcker Hub from Jenkins</div>
                 <div className='section-content'>
-                    <div className='heading 4'>
+                    <div className='heading-4'>
                         <p><span>Now moving forward, wouldnt it be cool to automate docker building and docker push to docker hub. Well sounds interesting to me, so lets see how its done. </span></p>
                         <p><span>Well lets first start our docker desktop and create a docker file in our project. Then push these changes to our github repo and build the project so that the jar is created. </span></p>
                         <p><span ><img className='sec-image' src={dockerFile} alt='dockerFile'  /></span></p>
