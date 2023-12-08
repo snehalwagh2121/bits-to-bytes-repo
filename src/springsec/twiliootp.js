@@ -39,8 +39,8 @@ function springTwilioOtp() {
                             <p><span ><img className='sec-image' src={modifiedUserDetailsService} alt='modifiedUserDetailsService'  /></span></p>
                             <p><span> Logic to generate OTP and send to mobile number: </span></p>
                             <p><span ><img className='sec-image' src={generateAndSendOtp} alt='generateAndSendOtp'  /></span></p>
-                            <p><span> Here we are getting CustomUserDetails from UserDetailsService. generateOtp() will accept 2 arguments username and mobilenumber. The logic will be to create random 6 digit and send to the mobile number as well as store in the DB for validation. Evertime the user enters OTP the otp in request will be matched with the OTP in DB. </span></p>
-                            <p><span> Message.creator() method is the one provided by TWILIO. It accepts 3 parameters mobile no to send the message to, mobile no from which the message will be sent and the message that needs to be sent. </span></p>
+                            <p><span> Here we are getting CustomUserDetails from UserDetailsService. <span className='bold'>generateOtp()</span> will accept 2 arguments username and mobilenumber. The logic will be to create random 6 digit and send to the mobile number as well as store in the DB for validation. Evertime the user enters OTP the otp in request will be matched with the OTP in DB. </span></p>
+                            <p><span> <span className='bold'>Message.creator()</span> method is the one provided by TWILIO. It accepts 3 parameters mobile no to send the message to, mobile no from which the message will be sent and the message that needs to be sent. </span></p>
                             <p><span> Lets test this code now. Send username and password first. A new OTP should be generated and sent to mobile number as well as in the response. </span></p>
                             <p><span ><img className='sec-image' src={otpGenerated} alt='otpGenerated'  /></span></p>
                             <p><span ><img className='sec-image' src={otpReceivedOnMobile} alt='otpReceivedOnMobile'  /></span></p>

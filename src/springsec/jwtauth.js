@@ -26,11 +26,10 @@ import usernamePassAuthProviderUpdated from './images/jwtAuth/usernamePassAuthPr
 function springSecJwtAuth() {
     return (
         <div className='main-page'>
-            <div className="page-heading">SPRING SECJWT AUTH</div>
+            <div className="page-heading">SPRING SECURITY USING JWT AUTH</div>
             <div className='page-content'>
                 <div className='heading-2'>CREATE A SAMPLE PROJECT</div>
                 <div className='section-content'>
-                    <div className='heading-3'>DEPENDENCY</div>
                     <div className='heading-4'>
                         <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                         <p><span ><img className='sec-image' src={dependencyImage} alt='dependency'  /></span></p>
@@ -56,18 +55,19 @@ function springSecJwtAuth() {
                         <p><span ><img className='sec-image' src={usernamepasswordTest} alt='usernamepasswordTest'  /></span></p>
                         <p><span >Now lets start adding code for JWT generation and verification</span></p>
                         <p><span ><img className='sec-image' src={jwtUtil} alt='jwtUtil'  /></span></p>
-                        <p><span >The generateJwtToken() methos will gnerate a token which will have username, issue time, expiration time encoded with a secret which we have provided in the properties file. 
-                            validateJwtToken() is used to first decode the input jwt if successfully decoded with the help of signature, it will validate the username.</span></p>
+                        <p><span >The <span className='bold'>generateJwtToken()</span> methos will gnerate a token which will have username, issue time, expiration time encoded with a secret which we have provided in the properties file. 
+                        <span className='bold'>validateJwtToken()</span> is used to first decode the input jwt if successfully decoded with the help of signature, it will validate the username.</span></p>
                         <p><span >Secret in properties file. We can provide any value for this just that it should be of 512 characters.</span></p>
                         <p><span ><img className='sec-image' src={jwtSecretProperties} alt='jwtSecretProperties'  /></span></p>
-                        <p><span >Lets modify the UsernamePasswordAuthenticationProvider Code to call the generateJwtToken() method whenever there is successful credentials login. We can send this token in the response header so that from next request onwards, the user can send this token in the request header instead of password. </span></p>
+                        <p><span >Lets modify the <span className='bold'>UsernamePasswordAuthenticationProvider</span> Code to call the generateJwtToken() method whenever there is successful credentials login. We can send this token in the response header so that from next request onwards, the user can send this token in the request header instead of password. </span></p>
                         <p><span ><img className='sec-image' src={usernamePassAuthProviderUpdated} alt='usernamePassAuthProviderUpdated'  /></span></p>
-                        <p><span >Now lets create authentication object for Jwt and add username and jwtToken fields. JwtAuthenticationProvider will call the validateJwtToken() which will verify if the input token is valid or not.</span></p>
+                        <p><span >Now lets create authentication object for Jwt and add username and jwtToken fields. <span className='bold'>JwtAuthenticationProvider</span> will call the validateJwtToken() which will verify if the input token is valid or not.</span></p>
                         <p><span ><img className='sec-image' src={jwtAuthentication} alt='jwtAuthentication'  /></span></p>
                         <p><span ><img className='sec-image' src={jwtAuthenticationProvider} alt='jwtAuthenticationProvider'  /></span></p>
                         <p><span >Now lets modify out Filter to call the JwtAuthentication if token is provided in headers and Add the JwtAuthenticationProvider to Authentication Manager.</span></p>
                         <p><span ><img className='sec-image' src={filterModified} alt='filterModified'  /></span></p>
                         <p><span ><img className='sec-image' src={projectConfigModified} alt='projectConfigModified'  /></span></p>
+                        <p><span className='heading-3'>TESTING:</span></p>
                         <p><span >Lets Test. Login using username and password. The token should be generated and visible in logs .</span></p>
                         <p><span ><img className='sec-image' src={jwtTokenLogs} alt='jwtTokenLogs'  /></span></p>
                         <p><span >While passing this token in the next request, there was an excpeiton generated in JwtUtil class: .</span></p>

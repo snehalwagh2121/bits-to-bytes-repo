@@ -36,17 +36,17 @@ function spring2facauth() {
                 <div className='page-content'>
                     <div className='heading-2'>CREATE A SAMPLE PROJECT</div>
                     <div className='section-content'>
-                        <div className='heading-3'>DEPENDENCY</div>
                         <div className='heading-4'>
                             <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
                             <p><span ><img className='sec-image' src={dependencyImage} alt='dependency'  /></span></p>
                             <p><span> In this project we'll be using H2 DB.</span></p>
                             <p><span className='heading-3'> Config: </span></p>
-                            <p><span> applicaiton.properties: </span></p>
+                            <p><span> application.properties: </span></p>
                             <p><span ><img className='sec-image' src={properties} alt='properties file'  /></span></p>
-                            <p><span> To have a schema setup and data in those schema's every time we run the applicaition, we'll create schema.sql nd data.sql files in the resources folder. </span></p>
+                            <p><span> To have a schema setup and data in those schema's every time we run the application, we'll create schema.sql nd data.sql files in the resources folder. </span></p>
                             <p><span ><img className='sec-image' src={schemasql} alt='schema file'  /></span></p>
                             <p><span ><img className='sec-image' src={datasql} alt='data file'  /></span></p>
+                            <p><span className='heading-3'> DB2 CONSOLE: </span></p>
                             <p><span> Lets see if we can connect to h2 from browser and see the schema and data. We'll hit the h2 url: http://localhost:8010/h2-console </span></p>
                             <p><span ><img className='sec-image' src={h2login} alt='h2 login page'  /></span></p>
                             <p><span> You might be wondering why we didnt see the login page while accessing the h2 DB. This is because we've explicitly told Spring to disable security.</span></p>
@@ -55,6 +55,7 @@ function spring2facauth() {
                             <p><span ><img className='sec-image' src={h2DB} alt='h2 DB view' /></span></p>
                             <p><span> Now lets create entity in our project to map to the UserData table. We will need JPA dependency: </span></p>
                             <p><span ><img className='sec-image' src={jpaDependency} alt='Jpa dependency' /></span></p>
+                            <p><span className='heading-3'> HANDLING USERS </span></p>
                             <p><span> UserData pojo: </span></p>
                             <p><span ><img className='sec-image' src={userdataClass} alt='userdataClass' /></span></p>
                             <p><span> Now lets create Repository for UserData: </span></p>
@@ -67,13 +68,19 @@ function spring2facauth() {
                             <p><span ><img className='sec-image' src={projectconfig} alt='projectconfig' /></span></p>
                             <p><span> Lets create a controller: </span></p>
                             <p><span ><img className='sec-image' src={controllerclass} alt='controllerclass' /></span></p>
-                            <p><span> Project Structure: </span></p>
+                            <p><span className='heading-3'> Project Structure: </span></p>
                             <p><span ><img className='sec-image' src={projectstructure} alt='projectstructure' /></span></p>
                             <p><span> Now we are all set to test the changes: </span></p>
+                            <p><span className='heading-3'> TESTING: </span></p>
                             <p><span> Correct credentials: </span></p>
                             <p><span ><img className='sec-image' src={correctcredentials} alt='correctcredentials' /></span></p>
                             <p><span> Incorrect credentials: </span></p>
                             <p><span ><img className='sec-image' src={incorrectcredentials} alt='incorrectcredentials' /></span></p>
+                        </div>
+                    </div>    
+                    <div className='heading-2'> 2 FACTOR LOGIN CHANGES: </div>
+                    <div className='section-content'>
+                        <div className='heading-4'>
                             <p><span> Now lets incorporate 2 factor login logic into the current code.</span></p>
                             <p><span> Lets start with creating Otp pojo, and OtpRepository: </span></p>
                             <p><span ><img className='sec-image' src={otpPojo} alt='otpPojo' /></span></p>
@@ -85,7 +92,7 @@ function spring2facauth() {
                             <p><span> Now lets implement the authentication logic in the AuthneticationProvders for both usernamePassword and otp: </span></p>
                             <p><span ><img className='sec-image' src={otpAuthenticationProvider} alt='otpAuthenticationProvider' /></span></p>
                             <p><span ><img className='sec-image' src={usernamePasswordAuthenticationProvider} alt='usernamePasswordAuthenticationProvider' /></span></p>
-                            <p><span> For usernamePasswordAuthentication , we will first load the userDetails from the DB and then match the passwords, if they are valid, then we will set otp in the Authentication object and return back. For otpAuthenticationProvider logic, we will load the Otp detaisl from DB and then match it. If they are matching, we will create Authentication Object by getting the userDetails from DB and returning it back. </span></p>
+                            <p><span> For usernamePasswordAuthentication , we will first load the userDetails from the DB and then match the passwords, if they are valid, then we will set otp in the Authentication object and return back. For otpAuthenticationProvider logic, we will load the Otp details from DB and then match it. If they are matching, we will create Authentication Object by getting the userDetails from DB and returning it back. </span></p>
                             <p><span> Here the supports method will do the magic of calling the appropriate AuthenticationProvider. One supports Otp Authentication whereas the other supports UsernamePassword Authentication </span></p>
                             <p><span> Now since the authentication logic is in place lets add a filter which will help in calling the appropriate Authentication Provider and setting up the Authentication Manager. </span></p>
                             <p><span ><img className='sec-image' src={twoFactorAuthFilter} alt='twoFactorAuthFilter' /></span></p>
@@ -93,9 +100,9 @@ function spring2facauth() {
                             <p><span> Coming to the final part lets define beans in Config. </span></p>
                             <p><span ><img className='sec-image' src={projectConfigUpdated} alt='projectConfigUpdated' /></span></p>
                             <p><span> We can see that we have provided the AuthenticationProviders details to AuthenticationManager. And in filterChain, we've specified to use our authentication logic instead of BasicAuthentication provided by Spring security. </span></p>
-                            <p><span> Project Structure:  </span></p>
+                            <p><span className='heading-3'> Project Structure:  </span></p>
                             <p><span ><img className='sec-image' src={projectStructureUpdated} alt='projectStructureUpdated' /></span></p>
-                            <p><span> Lets test the changes. </span></p>
+                            <p><span className='heading-3'> Lets test the changes. </span></p>
                             <p><span> Valid usenamePassword: </span></p>
                             <p><span ><img className='sec-image' src={otpInResponse} alt='otpInResponse' /></span></p>
                             <p><span> We got Otp in response header. Let's put this otp in the next request as header: </span></p>

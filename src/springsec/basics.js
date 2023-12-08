@@ -64,7 +64,7 @@ function springbasics() {
                             <p><span><img className='sec-image' alt='dependency' src={springUserDetailsService} /></span></p>
                             <p><span> Whenever we implement the UserDetailsService interface, we need to implement the method: loadUserByUsername(). Sample implementation: </span></p>
                             <p><span><img className='sec-image' alt='dependency' src={springCustomUserDetailsService} /></span></p>
-                            <p><span> Ofcourse instead of hardcoding the user, we can fetch the User details from DB and then populate the CustomUserDetails and return in the loadUserByUsername(). We will implement this flow in the project. </span></p>
+                            <p><span> Ofcourse instead of hardcoding the user, we can fetch the User details from DB and then populate the CustomUserDetails and return in the loadUserByUsername(). We will implement this flow in the upcoming projects. </span></p>
                             <p><span> We tell Spring security to use our UserDetialsService instead of the default one by creating beans and reurning our CustomUserDetails. One thing to note here is that whenever we pass our UserDetailsService, we need to provide definition of PasswordEncoder too. Else, we'll get following Exception while authentication: </span></p>
                             <p><span><img className='sec-image' alt='dependency' src={noOpPasswordEncoderError} /></span></p>
                             <p><span> Bean Definition for UserDetialsService and PasswordEncoder: </span></p>
