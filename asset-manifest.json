@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bits-to-bytes-repo/static/css/main.d28036bc.css",
-    "main.js": "/bits-to-bytes-repo/static/js/main.c80ab0fb.js",
+    "main.css": "/bits-to-bytes-repo/static/css/main.c98a1955.css",
+    "main.js": "/bits-to-bytes-repo/static/js/main.574704b6.js",
     "static/js/787.8dabd53d.chunk.js": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js",
     "static/media/grafanaLogin.PNG": "/bits-to-bytes-repo/static/media/grafanaLogin.98b8a50716aaa21fdc70.PNG",
     "static/media/zookeeper-start.PNG": "/bits-to-bytes-repo/static/media/zookeeper-start.9e080b38b43b89059028.PNG",
@@ -322,12 +322,12 @@
     "static/media/helloEndpoint.PNG": "/bits-to-bytes-repo/static/media/helloEndpoint.097e68184c84a4d02c17.PNG",
     "static/media/start-producer.PNG": "/bits-to-bytes-repo/static/media/start-producer.7d7252e1549170d8ad23.PNG",
     "index.html": "/bits-to-bytes-repo/index.html",
-    "main.d28036bc.css.map": "/bits-to-bytes-repo/static/css/main.d28036bc.css.map",
-    "main.c80ab0fb.js.map": "/bits-to-bytes-repo/static/js/main.c80ab0fb.js.map",
+    "main.c98a1955.css.map": "/bits-to-bytes-repo/static/css/main.c98a1955.css.map",
+    "main.574704b6.js.map": "/bits-to-bytes-repo/static/js/main.574704b6.js.map",
     "787.8dabd53d.chunk.js.map": "/bits-to-bytes-repo/static/js/787.8dabd53d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d28036bc.css",
-    "static/js/main.c80ab0fb.js"
+    "static/css/main.c98a1955.css",
+    "static/js/main.574704b6.js"
   ]
 }
