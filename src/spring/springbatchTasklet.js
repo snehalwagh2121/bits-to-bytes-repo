@@ -21,13 +21,12 @@ import excelFileWithContent from './images/tasklet/execelFileWithContent.PNG';
 function SpringBatchTasklet() {
     return (
         <div className='main-page'>
-            <div className="page-heading">SPRING TSKLET JOB</div>
+            <div className="page-heading">SPRING TASKLET JOB</div>
             <div className='page-content'>
                 <div className='heading-2'>CREATE A SAMPLE PROJECT</div>
                 <div className='section-content'>
-                    <div className='heading-3'>DEPENDENCY</div>
                     <div className='heading-4'>
-                        <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a></span></p>
+                        <p><span>We can create a new spring project from site: <a href='https://start.spring.io'>start.spring.io</a> with the following dependencies:</span></p>
                         <p><span ><img className='sec-image' src={dependencyImage} alt='dependency'  /></span></p>
                         <p><span>Lets create a sample tasklet flow with loggers so that we understand if the flow is working or not. Later we'll add logic to fetch data from DB and insert in a excel file.</span></p>
                         <p><span >Lets add a Tasklet implementation first: </span></p>
@@ -50,7 +49,7 @@ function SpringBatchTasklet() {
                         <p><span >Lets fetch the employees from DB and add call the writeToExcelFile() and pass filePath and employeeLists as paramters.</span></p>
                         <p><span ><img className='sec-image' src={sampleTaskletModified} alt='sampleTaskletModified'  /></span></p>
                         <p><span ><img className='sec-image' src={filePath} alt='filePath'  /></span></p>
-                        <p><span >Lets test: </span></p>
+                        <p><span className='heading-3'>Lets test: </span></p>
                         <p><span >Ohh our step is not executing again as it has already been executed: </span></p>
                         <p><span ><img className='sec-image' src={LogForJobNotExecuting} alt='LogForJobNotExecuting'  /></span></p>
                         <p><span >Lets solve this by telling spring batch to run our tasklet even if it has been executed before by calling the method allowStartIfComplete(true) before step build. Also instead of creating a new instance of tasklet everytime and passing into step. Lets mark it as component and Autowire it. </span></p>

@@ -49,3 +49,15 @@
     border: 0.5px solid rgb(68, 68, 68);
     padding: 5px;
 }
+
+@media (max-width: 500px) {
+    .page-heading{
+        font-size: 1.5rem;
+    }
+    .heading-2{
+        font-size: 1.2rem;
+    }
+    .heading-4{
+        font-size: 1rem;
+    }
+  }

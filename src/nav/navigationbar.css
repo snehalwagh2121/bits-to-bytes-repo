@@ -22,6 +22,7 @@
   .App-link {
     color: #61dafb;
     width: 100vw;
+    background-color: #282c34;
   }
   .menu-header {
     width: 100vw;
@@ -29,7 +30,6 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: #282c34;
   }
   .topics {
     width: 20%;
@@ -75,3 +75,20 @@
     }
   }
   
+  @media (max-width: 500px) {
+    .App-header {
+      font-size: 1rem;
+    }
+    .topic-name{
+      padding: 1.5%;
+    }
+    .topics {
+      width: 15%;
+      margin-left: 5%;
+      text-align: center;
+    }
+    .menu-header {
+      width: 95vw;
+      justify-content: space-evenly;
+    }
+  }
